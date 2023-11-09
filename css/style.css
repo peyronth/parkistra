@@ -31,15 +31,15 @@ body {
     display: block;
     position: absolute;
     background-color: var(--parkistra-colorMain-green);
-    right: 18%;
+    right: 17%;
     top : 20%;
-    height: 24vh;
-    width: 24vh;
+    height: 26vh;
+    width: 26vh;
     border-radius: 50%;
     border: none;
     cursor: pointer;
     z-index: 3;
-    font-size: 100%;
+    font-size: 120%;
     color:white;
     padding: 2%;
     font-weight: bold;
@@ -83,4 +83,5 @@ body {
 .home-top button:hover {
     transform: scale(1.1);
     background-color: var(--parkistra-colorTeritary-blue);
+    z-index: 4;
 }
