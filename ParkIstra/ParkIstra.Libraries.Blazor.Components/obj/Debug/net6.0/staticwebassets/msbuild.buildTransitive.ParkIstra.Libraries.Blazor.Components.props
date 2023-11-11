@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\ParkIstra.Libraries.Blazor.Components.props" />
-</Project>

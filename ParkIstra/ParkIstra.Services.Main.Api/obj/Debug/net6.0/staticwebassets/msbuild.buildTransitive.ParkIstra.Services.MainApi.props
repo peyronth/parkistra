@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\ParkIstra.Services.MainApi.props" />
-</Project>
