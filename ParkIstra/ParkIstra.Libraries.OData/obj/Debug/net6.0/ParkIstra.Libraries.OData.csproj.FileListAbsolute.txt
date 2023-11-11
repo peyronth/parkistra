@@ -1,0 +1,15 @@
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.OData\bin\Debug\net6.0\ParkIstra.Libraries.OData.deps.json
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.OData\bin\Debug\net6.0\ParkIstra.Libraries.OData.dll
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.OData\bin\Debug\net6.0\ParkIstra.Libraries.OData.pdb
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.OData\bin\Debug\net6.0\ParkIstra.Models.Main.dll
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.OData\bin\Debug\net6.0\ParkIstra.Models.Main.pdb
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.OData\obj\Debug\net6.0\ParkIstra.Libraries.OData.csproj.AssemblyReference.cache
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.OData\obj\Debug\net6.0\ParkIstra.Libraries.OData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.OData\obj\Debug\net6.0\ParkIstra.Libraries.OData.AssemblyInfoInputs.cache
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.OData\obj\Debug\net6.0\ParkIstra.Libraries.OData.AssemblyInfo.cs
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.OData\obj\Debug\net6.0\ParkIstra.Libraries.OData.csproj.CoreCompileInputs.cache
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.OData\obj\Debug\net6.0\ParkIstra.Libraries.OData.csproj.CopyComplete
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.OData\obj\Debug\net6.0\ParkIstra.Libraries.OData.dll
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.OData\obj\Debug\net6.0\refint\ParkIstra.Libraries.OData.dll
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.OData\obj\Debug\net6.0\ParkIstra.Libraries.OData.pdb
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.OData\obj\Debug\net6.0\ref\ParkIstra.Libraries.OData.dll

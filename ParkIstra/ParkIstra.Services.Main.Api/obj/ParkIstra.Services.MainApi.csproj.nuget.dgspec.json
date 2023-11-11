@@ -1,0 +1,1315 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Services.Main.Api\\ParkIstra.Services.MainApi.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\AppInterfaces\\AppInterfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\AppInterfaces\\AppInterfaces.csproj",
+        "projectName": "AppInterfaces",
+        "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\AppInterfaces\\AppInterfaces.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\AppInterfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Broker\\ParkIstra.Libraries.Broker.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Broker\\ParkIstra.Libraries.Broker.csproj"
+              },
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Main\\ParkIstra.Models.Main.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Main\\ParkIstra.Models.Main.csproj"
+              },
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Util\\ParkIstra.Models.Util.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Util\\ParkIstra.Models.Util.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppBlazor.Client\\ParkIstra.AppBlazor.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppBlazor.Client\\ParkIstra.AppBlazor.Client.csproj",
+        "projectName": "ParkIstra.AppBlazor.Client",
+        "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppBlazor.Client\\ParkIstra.AppBlazor.Client.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppBlazor.Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppBrokers.MainApi\\ParkIstra.AppBrokers.MainApi.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppBrokers.MainApi\\ParkIstra.AppBrokers.MainApi.csproj"
+              },
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppBrokers.UtilApi\\ParkIstra.AppBrokers.UtilApi.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppBrokers.UtilApi\\ParkIstra.AppBrokers.UtilApi.csproj"
+              },
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppServices.MainApi\\ParkIstra.AppServices.MainApi.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppServices.MainApi\\ParkIstra.AppServices.MainApi.csproj"
+              },
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppServices.UtilApi\\ParkIstra.AppServices.UtilApi.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppServices.UtilApi\\ParkIstra.AppServices.UtilApi.csproj"
+              },
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Blazor.Components\\ParkIstra.Libraries.Blazor.Components.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Blazor.Components\\ParkIstra.Libraries.Blazor.Components.csproj"
+              },
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Broker\\ParkIstra.Libraries.Broker.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Broker\\ParkIstra.Libraries.Broker.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppBrokers.MainApi\\ParkIstra.AppBrokers.MainApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppBrokers.MainApi\\ParkIstra.AppBrokers.MainApi.csproj",
+        "projectName": "ParkIstra.AppBrokers.MainApi",
+        "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppBrokers.MainApi\\ParkIstra.AppBrokers.MainApi.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppBrokers.MainApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\AppInterfaces\\AppInterfaces.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\AppInterfaces\\AppInterfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppBrokers.UtilApi\\ParkIstra.AppBrokers.UtilApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppBrokers.UtilApi\\ParkIstra.AppBrokers.UtilApi.csproj",
+        "projectName": "ParkIstra.AppBrokers.UtilApi",
+        "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppBrokers.UtilApi\\ParkIstra.AppBrokers.UtilApi.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppBrokers.UtilApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\AppInterfaces\\AppInterfaces.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\AppInterfaces\\AppInterfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppServices.MainApi\\ParkIstra.AppServices.MainApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppServices.MainApi\\ParkIstra.AppServices.MainApi.csproj",
+        "projectName": "ParkIstra.AppServices.MainApi",
+        "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppServices.MainApi\\ParkIstra.AppServices.MainApi.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppServices.MainApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\AppInterfaces\\AppInterfaces.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\AppInterfaces\\AppInterfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppServices.UtilApi\\ParkIstra.AppServices.UtilApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppServices.UtilApi\\ParkIstra.AppServices.UtilApi.csproj",
+        "projectName": "ParkIstra.AppServices.UtilApi",
+        "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppServices.UtilApi\\ParkIstra.AppServices.UtilApi.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppServices.UtilApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\AppInterfaces\\AppInterfaces.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\AppInterfaces\\AppInterfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Contexts.Main\\ParkIstra.Contexts.Main.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Contexts.Main\\ParkIstra.Contexts.Main.csproj",
+        "projectName": "ParkIstra.Contexts.Main",
+        "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Contexts.Main\\ParkIstra.Contexts.Main.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Contexts.Main\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Main\\ParkIstra.Models.Main.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Main\\ParkIstra.Models.Main.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.Data.OData": {
+              "target": "Package",
+              "version": "[5.8.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Contexts.Util\\ParkIstra.Contexts.Util.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Contexts.Util\\ParkIstra.Contexts.Util.csproj",
+        "projectName": "ParkIstra.Contexts.Util",
+        "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Contexts.Util\\ParkIstra.Contexts.Util.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Contexts.Util\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Util\\ParkIstra.Models.Util.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Util\\ParkIstra.Models.Util.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.Data.OData": {
+              "target": "Package",
+              "version": "[5.8.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.ASP.EF\\ParkIstra.Libraries.ASP.EF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.ASP.EF\\ParkIstra.Libraries.ASP.EF.csproj",
+        "projectName": "ParkIstra.Libraries.ASP.EF",
+        "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.ASP.EF\\ParkIstra.Libraries.ASP.EF.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.ASP.EF\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.ASP\\ParkIstra.Libraries.ASP.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.ASP\\ParkIstra.Libraries.ASP.csproj"
+              },
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.EF\\ParkIstra.Libraries.EF.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.EF\\ParkIstra.Libraries.EF.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.ASP\\ParkIstra.Libraries.ASP.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.ASP\\ParkIstra.Libraries.ASP.csproj",
+        "projectName": "ParkIstra.Libraries.ASP",
+        "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.ASP\\ParkIstra.Libraries.ASP.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.ASP\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Hellang.Middleware.ProblemDetails": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Blazor.Components\\ParkIstra.Libraries.Blazor.Components.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Blazor.Components\\ParkIstra.Libraries.Blazor.Components.csproj",
+        "projectName": "ParkIstra.Libraries.Blazor.Components",
+        "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Blazor.Components\\ParkIstra.Libraries.Blazor.Components.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Blazor.Components\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\AppInterfaces\\AppInterfaces.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\AppInterfaces\\AppInterfaces.csproj"
+              },
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Broker\\ParkIstra.Libraries.Broker.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Broker\\ParkIstra.Libraries.Broker.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Broker\\ParkIstra.Libraries.Broker.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Broker\\ParkIstra.Libraries.Broker.csproj",
+        "projectName": "ParkIstra.Libraries.Broker",
+        "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Broker\\ParkIstra.Libraries.Broker.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Broker\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.EF\\ParkIstra.Libraries.EF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.EF\\ParkIstra.Libraries.EF.csproj",
+        "projectName": "ParkIstra.Libraries.EF",
+        "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.EF\\ParkIstra.Libraries.EF.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.EF\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.OData\\ParkIstra.Libraries.OData.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.OData\\ParkIstra.Libraries.OData.csproj",
+        "projectName": "ParkIstra.Libraries.OData",
+        "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.OData\\ParkIstra.Libraries.OData.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.OData\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Main\\ParkIstra.Models.Main.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Main\\ParkIstra.Models.Main.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OData": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Main\\ParkIstra.Models.Main.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Main\\ParkIstra.Models.Main.csproj",
+        "projectName": "ParkIstra.Models.Main",
+        "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Main\\ParkIstra.Models.Main.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Main\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Shared\\ParkIstra.Models.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Shared\\ParkIstra.Models.Shared.csproj",
+        "projectName": "ParkIstra.Models.Shared",
+        "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Shared\\ParkIstra.Models.Shared.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Util\\ParkIstra.Models.Util.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Util\\ParkIstra.Models.Util.csproj",
+        "projectName": "ParkIstra.Models.Util",
+        "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Util\\ParkIstra.Models.Util.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Util\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Services.EmailSender\\ParkIstra.Services.EmailSender.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Services.EmailSender\\ParkIstra.Services.EmailSender.csproj",
+        "projectName": "ParkIstra.Services.EmailSender",
+        "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Services.EmailSender\\ParkIstra.Services.EmailSender.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Services.EmailSender\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "NETCore.MailKit": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Services.Main.Api\\ParkIstra.Services.MainApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Services.Main.Api\\ParkIstra.Services.MainApi.csproj",
+        "projectName": "ParkIstra.Services.MainApi",
+        "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Services.Main.Api\\ParkIstra.Services.MainApi.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Services.Main.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppBlazor.Client\\ParkIstra.AppBlazor.Client.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.AppBlazor.Client\\ParkIstra.AppBlazor.Client.csproj"
+              },
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Contexts.Main\\ParkIstra.Contexts.Main.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Contexts.Main\\ParkIstra.Contexts.Main.csproj"
+              },
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Contexts.Util\\ParkIstra.Contexts.Util.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Contexts.Util\\ParkIstra.Contexts.Util.csproj"
+              },
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.ASP.EF\\ParkIstra.Libraries.ASP.EF.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.ASP.EF\\ParkIstra.Libraries.ASP.EF.csproj"
+              },
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.ASP\\ParkIstra.Libraries.ASP.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.ASP\\ParkIstra.Libraries.ASP.csproj"
+              },
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.EF\\ParkIstra.Libraries.EF.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.EF\\ParkIstra.Libraries.EF.csproj"
+              },
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.OData\\ParkIstra.Libraries.OData.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.OData\\ParkIstra.Libraries.OData.csproj"
+              },
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Shared\\ParkIstra.Models.Shared.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Shared\\ParkIstra.Models.Shared.csproj"
+              },
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Util\\ParkIstra.Models.Util.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Models.Util\\ParkIstra.Models.Util.csproj"
+              },
+              "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Services.EmailSender\\ParkIstra.Services.EmailSender.csproj": {
+                "projectPath": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Services.EmailSender\\ParkIstra.Services.EmailSender.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.AspNetCore.OData": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

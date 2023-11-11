@@ -1,0 +1,27 @@
+﻿@inject JsonSerializerOptions JsonSerializerOptions;
+@using System.Text.Json;
+@using ParkIstra.Libraries.Blazor;
+
+@if (BlazorProblemDetails != null)
+{
+    <div class="problem-message">
+        @if (IsDevelopment)
+        {
+            <pre>@BlazorProblemDetailsJson</pre>
+        }
+        else
+        {
+            <p><strong>@BlazorProblemDetails.Status - @BlazorProblemDetails.HttpStatusCode</strong></p>
+        }
+    </div>
+}
+
+@code {
+    [Parameter]
+    public BlazorProblemDetails? BlazorProblemDetails { get; set; }
+    [Parameter]
+    public bool IsDevelopment { get; set; }
+
+    private string? BlazorProblemDetailsJson =>
+        JsonSerializer.Serialize(BlazorProblemDetails, JsonSerializerOptions);
+}

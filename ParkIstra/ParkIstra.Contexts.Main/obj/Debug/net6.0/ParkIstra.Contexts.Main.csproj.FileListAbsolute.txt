@@ -1,0 +1,17 @@
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Contexts.Main\bin\Debug\net6.0\ParkIstra.Contexts.Main.deps.json
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Contexts.Main\bin\Debug\net6.0\ParkIstra.Contexts.Main.runtimeconfig.json
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Contexts.Main\bin\Debug\net6.0\ParkIstra.Contexts.Main.dll
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Contexts.Main\bin\Debug\net6.0\ParkIstra.Contexts.Main.pdb
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Contexts.Main\bin\Debug\net6.0\ParkIstra.Models.Main.dll
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Contexts.Main\bin\Debug\net6.0\ParkIstra.Models.Main.pdb
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Contexts.Main\obj\Debug\net6.0\ParkIstra.Contexts.Main.csproj.AssemblyReference.cache
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Contexts.Main\obj\Debug\net6.0\ParkIstra.Contexts.Main.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Contexts.Main\obj\Debug\net6.0\ParkIstra.Contexts.Main.AssemblyInfoInputs.cache
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Contexts.Main\obj\Debug\net6.0\ParkIstra.Contexts.Main.AssemblyInfo.cs
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Contexts.Main\obj\Debug\net6.0\ParkIstra.Contexts.Main.csproj.CoreCompileInputs.cache
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Contexts.Main\obj\Debug\net6.0\ParkIstra.Contexts.Main.csproj.CopyComplete
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Contexts.Main\obj\Debug\net6.0\ParkIstra.Contexts.Main.dll
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Contexts.Main\obj\Debug\net6.0\refint\ParkIstra.Contexts.Main.dll
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Contexts.Main\obj\Debug\net6.0\ParkIstra.Contexts.Main.pdb
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Contexts.Main\obj\Debug\net6.0\ParkIstra.Contexts.Main.genruntimeconfig.cache
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Contexts.Main\obj\Debug\net6.0\ref\ParkIstra.Contexts.Main.dll

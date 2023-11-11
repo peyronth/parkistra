@@ -1,0 +1,24 @@
+﻿@if (IsVisible)
+{
+    <div class="modal fade show d-block" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">@DialogTitle</h5>
+                    <button type="button" class="btn-close" @onclick="() => CloseAsync(true)"></button>
+                </div>
+                <div class="modal-body">
+                    @DialogMessage
+                </div>
+                <div class="modal-footer">
+                    <button class="@OkButtonCssClass" @ref="OkButton" @onclick="() => CloseAsync(true)">
+                        <span class="fas fa-check"></span> @OkButtonText
+                    </button>
+                    <button hidden=True class="@CancelButtonCssClass" @ref="CancelButton" @onclick="() => CloseAsync(false)">
+                        <span class="fas fa-times"></span> @CancelButtonText
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
