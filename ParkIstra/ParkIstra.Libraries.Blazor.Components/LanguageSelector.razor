@@ -1,0 +1,7 @@
+﻿@inherits LanguageSelectorBase
+<select class="form-select" @bind="Culture">
+    @foreach (var language in languageDictionary)
+    {
+       <option value="@language.Key">@language.Value</option>
+    }
+</select>

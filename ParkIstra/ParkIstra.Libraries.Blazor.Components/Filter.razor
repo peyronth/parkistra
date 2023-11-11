@@ -1,0 +1,5 @@
+﻿<div class="mr-1">@Title</div>
+<div class="input-group">
+    <input type="text" @ref="FilterInput" value="@Value" @oninput="OnValueInputted" @onkeyup="OnValueKeyUp" style="width:@WidthCssProperty">
+    <button class="btn btn-outline-secondary" type="button" @onclick="ClearFilterAsync"><span class="fas fa-ban" title="Clear filter" /></button>
+</div>
