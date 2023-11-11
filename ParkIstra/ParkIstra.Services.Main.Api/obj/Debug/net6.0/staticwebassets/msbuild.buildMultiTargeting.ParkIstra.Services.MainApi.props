@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ParkIstra.Services.MainApi.props" />
+</Project>

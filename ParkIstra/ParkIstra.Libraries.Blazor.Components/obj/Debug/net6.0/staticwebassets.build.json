@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "FlkQiLZ06DfHKAaRpY8lllu00LjheDcSgR0rOz7omJE=",
+  "Source": "ParkIstra.Libraries.Blazor.Components",
+  "BasePath": "_content/ParkIstra.Libraries.Blazor.Components",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ParkIstra.Libraries.Blazor.Components\\wwwroot",
+      "Source": "ParkIstra.Libraries.Blazor.Components",
+      "ContentRoot": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Blazor.Components\\wwwroot\\",
+      "BasePath": "_content/ParkIstra.Libraries.Blazor.Components",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Blazor.Components\\obj\\Debug\\net6.0\\scopedcss\\bundle\\ParkIstra.Libraries.Blazor.Components.styles.css",
+      "SourceId": "ParkIstra.Libraries.Blazor.Components",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Blazor.Components\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/ParkIstra.Libraries.Blazor.Components",
+      "RelativePath": "ParkIstra.Libraries.Blazor.Components.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Blazor.Components\\obj\\Debug\\net6.0\\scopedcss\\bundle\\ParkIstra.Libraries.Blazor.Components.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Blazor.Components\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ParkIstra.Libraries.Blazor.Components.bundle.scp.css",
+      "SourceId": "ParkIstra.Libraries.Blazor.Components",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Blazor.Components\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/ParkIstra.Libraries.Blazor.Components",
+      "RelativePath": "ParkIstra.Libraries.Blazor.Components.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Blazor.Components\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ParkIstra.Libraries.Blazor.Components.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Blazor.Components\\wwwroot\\background.png",
+      "SourceId": "ParkIstra.Libraries.Blazor.Components",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Blazor.Components\\wwwroot\\",
+      "BasePath": "_content/ParkIstra.Libraries.Blazor.Components",
+      "RelativePath": "background.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\background.png"
+    },
+    {
+      "Identity": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Blazor.Components\\wwwroot\\exampleJsInterop.js",
+      "SourceId": "ParkIstra.Libraries.Blazor.Components",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\andri\\Desktop\\University 1.1\\PIDI\\parkistra\\ParkIstra\\ParkIstra.Libraries.Blazor.Components\\wwwroot\\",
+      "BasePath": "_content/ParkIstra.Libraries.Blazor.Components",
+      "RelativePath": "exampleJsInterop.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exampleJsInterop.js"
+    }
+  ]
+}

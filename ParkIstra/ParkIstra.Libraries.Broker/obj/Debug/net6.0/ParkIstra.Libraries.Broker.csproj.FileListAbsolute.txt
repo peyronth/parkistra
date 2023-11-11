@@ -1,0 +1,12 @@
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.Broker\bin\Debug\net6.0\ParkIstra.Libraries.Broker.deps.json
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.Broker\bin\Debug\net6.0\ParkIstra.Libraries.Broker.dll
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.Broker\bin\Debug\net6.0\ParkIstra.Libraries.Broker.pdb
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.Broker\obj\Debug\net6.0\ParkIstra.Libraries.Broker.csproj.AssemblyReference.cache
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.Broker\obj\Debug\net6.0\ParkIstra.Libraries.Broker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.Broker\obj\Debug\net6.0\ParkIstra.Libraries.Broker.AssemblyInfoInputs.cache
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.Broker\obj\Debug\net6.0\ParkIstra.Libraries.Broker.AssemblyInfo.cs
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.Broker\obj\Debug\net6.0\ParkIstra.Libraries.Broker.csproj.CoreCompileInputs.cache
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.Broker\obj\Debug\net6.0\ParkIstra.Libraries.Broker.dll
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.Broker\obj\Debug\net6.0\refint\ParkIstra.Libraries.Broker.dll
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.Broker\obj\Debug\net6.0\ParkIstra.Libraries.Broker.pdb
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.Broker\obj\Debug\net6.0\ref\ParkIstra.Libraries.Broker.dll

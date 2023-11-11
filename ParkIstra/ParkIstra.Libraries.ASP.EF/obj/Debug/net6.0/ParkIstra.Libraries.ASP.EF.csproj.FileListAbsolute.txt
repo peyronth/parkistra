@@ -1,0 +1,17 @@
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.ASP.EF\bin\Debug\net6.0\ParkIstra.Libraries.ASP.EF.deps.json
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.ASP.EF\bin\Debug\net6.0\ParkIstra.Libraries.ASP.EF.dll
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.ASP.EF\bin\Debug\net6.0\ParkIstra.Libraries.ASP.EF.pdb
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.ASP.EF\bin\Debug\net6.0\ParkIstra.Libraries.ASP.dll
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.ASP.EF\bin\Debug\net6.0\ParkIstra.Libraries.EF.dll
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.ASP.EF\bin\Debug\net6.0\ParkIstra.Libraries.ASP.pdb
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.ASP.EF\bin\Debug\net6.0\ParkIstra.Libraries.EF.pdb
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.ASP.EF\obj\Debug\net6.0\ParkIstra.Libraries.ASP.EF.csproj.AssemblyReference.cache
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.ASP.EF\obj\Debug\net6.0\ParkIstra.Libraries.ASP.EF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.ASP.EF\obj\Debug\net6.0\ParkIstra.Libraries.ASP.EF.AssemblyInfoInputs.cache
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.ASP.EF\obj\Debug\net6.0\ParkIstra.Libraries.ASP.EF.AssemblyInfo.cs
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.ASP.EF\obj\Debug\net6.0\ParkIstra.Libraries.ASP.EF.csproj.CoreCompileInputs.cache
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.ASP.EF\obj\Debug\net6.0\ParkIstra.Libraries.ASP.EF.csproj.CopyComplete
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.ASP.EF\obj\Debug\net6.0\ParkIstra.Libraries.ASP.EF.dll
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.ASP.EF\obj\Debug\net6.0\refint\ParkIstra.Libraries.ASP.EF.dll
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.ASP.EF\obj\Debug\net6.0\ParkIstra.Libraries.ASP.EF.pdb
+C:\Users\andri\Desktop\University 1.1\PIDI\parkistra\ParkIstra\ParkIstra.Libraries.ASP.EF\obj\Debug\net6.0\ref\ParkIstra.Libraries.ASP.EF.dll
