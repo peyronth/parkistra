@@ -2,14 +2,7 @@
 @inject NavigationManager Navigation
 
 <NavMenu/>
-<div class="page">
-    <main>
-        @Body
-        <div id="errorDiv">
-            <Dialog @ref="ErrorHandler.ErrorDialog" />
-        </div>
-        <div id="SucessDiv">
-            <SuccessDialog @ref="ErrorHandler.successDialog" />
-        </div>
-    </main>
-</div>
+<main>
+    @Body
+</main>
+<FooterBottom/>
