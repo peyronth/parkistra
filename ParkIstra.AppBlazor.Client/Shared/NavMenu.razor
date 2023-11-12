@@ -1,36 +1,26 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">ParkIstra.AppBlazor.Client</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+﻿
+<div id='main-nav' class="@NavMenuCssClass">
+    <div class='nav-container'>
+        <span id='nav-burger-open' class="material-symbols-outlined" @onclick="ToggleNavMenu">menu</span>
+        <span id='nav-burger-close' class="material-symbols-outlined" @onclick="ToggleNavMenu">close</span>
+        <nav id="parkistraNavbar">
+            <a href="/">Home</a>
+            <a href="/projects/">Projects</a>
+            <a href="/contact/">Contact</a>
+            <a href="/gallery/">Gallery</a>
+            <a href="/about/">About us</a>
+            <a href="/support/">Support us</a>
+            <a href="/contact/">Contact</a>
+        </nav>
     </div>
-</div>
-
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
-            </NavLink>
-        </div>
-    </nav>
-</div>
+    <div id='nav-close-zone'>
+    </div>
+</div> 
 
 @code {
     private bool collapseNavMenu = true;
 
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    private string? NavMenuCssClass => collapseNavMenu ? "main-nav-collapsed" : "main-nav-open";
 
     private void ToggleNavMenu()
     {
