@@ -11,4 +11,14 @@ public interface IMainApiService
 
     #endregion
 
+    #region Testimonials
+
+    Task<Response<Testimonials>> GetTestimonialsAsync(ODataQuery? query = null);
+    Task<Response<Testimonials>> GetTestimonialByIDAsync(int id, ODataQuery? query = null);
+    Task<Response<Testimonials>> AddTestimonialAsync(Testimonials testimonial);
+    Task<Response<Testimonials>> UpdateTestimonialAsync(int id, Testimonials testimonial);
+    Task<Response<Testimonials>> DeleteTestimonialAsync(int id);
+
+    #endregion
+
 }

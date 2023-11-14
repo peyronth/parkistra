@@ -34,7 +34,7 @@ public class TestimonialsController : ControllerBase, IDisposable
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     //[Authorize(PolicyMainApiNames.MainApi_Testimonials_Read)]
 
-    public async Task<ActionResult<Testimonials>> GetTestimonialsById(int id)
+    public async Task<ActionResult<Testimonials>> GetTestimonialById(int id)
     {
         var query = SingleResult.Create(
             MainDbContext.Testimonials.Where(m => m.Id == id));
@@ -64,7 +64,7 @@ public class TestimonialsController : ControllerBase, IDisposable
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     //[Authorize(PolicyMainApiNames.MainApi_Testimonials_Write)]
 
-    public async Task<ActionResult<Testimonials>> PostTestimonials(Testimonials Testimonials)
+    public async Task<ActionResult<Testimonials>> PostTestimonial(Testimonials Testimonials)
     {
         using var mainDbContext = MainDbContextFactory.CreateDbContext();
 
@@ -75,7 +75,7 @@ public class TestimonialsController : ControllerBase, IDisposable
         { return ProblemFactory.ObjectResultFailedEFSave(saveResult); }
 
         return CreatedAtAction(
-            nameof(PostTestimonials),
+            nameof(PostTestimonial),
             new { id = Testimonials.Id },
             Testimonials);
     }
@@ -87,7 +87,7 @@ public class TestimonialsController : ControllerBase, IDisposable
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     //[Authorize(PolicyMainApiNames.MainApi_Testimonials_Write)]
 
-    public async Task<IActionResult> PutTestimonials(int id, Testimonials Testimonials)
+    public async Task<IActionResult> PutTestimonial(int id, Testimonials Testimonials)
     {
         string message;
 
@@ -115,7 +115,7 @@ public class TestimonialsController : ControllerBase, IDisposable
         { return ProblemFactory.ObjectResultFailedEFSave(saveResult); }
 
         return AcceptedAtAction(
-            nameof(PutTestimonials),
+            nameof(PutTestimonial),
             new { id = Testimonials.Id },
             Testimonials);
 
@@ -127,7 +127,7 @@ public class TestimonialsController : ControllerBase, IDisposable
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     //[Authorize(PolicyMainApiNames.MainApi_Testimonials_Write)]
 
-    public async Task<IActionResult> DeleteTestimonialsAsync(int id)
+    public async Task<IActionResult> DeleteTestimonialAsync(int id)
     {
         // Promijeniti u Async
         using var mainDbContext = MainDbContextFactory.CreateDbContext();
