@@ -28,12 +28,12 @@ _ = builder.Services.AddScoped<ErrorHandler>(); //testservice
 
 #region unused
 _ = builder.Services.AddScoped<IMainApiService, MainApiService>();
-_ = builder.Services.AddHttpClient<IMainApiBroker, IMainApiBroker>(client =>
+_ = builder.Services.AddHttpClient<IMainApiBroker, MainApiBroker>(client =>
     client.BaseAddress = new Uri(builder.Configuration["MainApiUri"] ?? "")).AddHttpMessageHandler<CustomHttpMessageHandler>();
 
 _ = builder.Services.AddScoped<IUtilApiService, UtilApiService>();
 _ = builder.Services.AddHttpClient<IUtilApiBroker, UtilApiBroker>(client =>
-    client.BaseAddress = new Uri(builder.Configuration["AdministrationApiUri"] ?? "")).AddHttpMessageHandler<CustomHttpMessageHandler>();
+    client.BaseAddress = new Uri(builder.Configuration["MainApiUri"] ?? "")).AddHttpMessageHandler<CustomHttpMessageHandler>();
 #endregion
 
 //Identity - authorize view - bff

@@ -1,3 +1,5 @@
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+
 namespace ParkIstra.Services.MainApi.Controllers;
 
 [Route("[controller]")]
@@ -20,13 +22,32 @@ public class TestimonialsController : ControllerBase, IDisposable
     [OdataEnableQuery]
     //[Authorize(PolicyMainApiNames.MainApi_Testimonials_Read)]
 
-    public async Task<ActionResult<IQueryable<Testimonials>>> GetAllTestimonials()
+    public async Task<ActionResult<IQueryable<Testimonials>>> GetAllTestimonials(int? numberOfArt = null)
+    {
+        //if (numberOfArt != null)
+        //{
+        //    var query = MainDbContext.Testimonials.;
+
+        //    return Ok(query);
+        //}
+        //else
+        //{
+            var query = MainDbContext.Testimonials;
+
+            return Ok(query);
+        //}
+    }
+
+    [HttpGet("BySortOrBySearch")]
+    [OdataEnableQuery]
+    //[Authorize(PolicyMainApiNames.MainApi_Testimonials_Read)]
+
+    public async Task<ActionResult<IQueryable<Testimonials>>> GetAllTestimonialsBySearchOrSort(int numberOfArt)
     {
         var query = MainDbContext.Testimonials;
 
         return Ok(query);
     }
-
 
     [HttpGet("{id:int}")]
     [OdataEnableQuery]
