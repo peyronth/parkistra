@@ -14,6 +14,7 @@ public partial class MainDbContext : IdentityDbContext<
 
     public DbSet<Project> Projects => Set<Project>();
     public DbSet<UserInfo> UserInfos => Set<UserInfo>();
+    public DbSet<Testimonials> Testimonials => Set<Testimonials>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -26,7 +27,7 @@ public partial class MainDbContext : IdentityDbContext<
         _ = modelBuilder.ApplyConfiguration(new ApplicationUserTokenConfiguration());
         _ = modelBuilder.ApplyConfiguration(new ProjectConfiguration());
         _ = modelBuilder.ApplyConfiguration(new UserInfoConfiguration());
-
+        _ = modelBuilder.ApplyConfiguration(new TestimonialsConfiguration());
     }
 
 
