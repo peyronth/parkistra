@@ -1,0 +1,10 @@
+﻿global using ParkIstra.Models.Shared;
+global using ParkIstra.Services.EmailsSender;
+global using Microsoft.AspNetCore.Identity;
+global using Microsoft.IdentityModel.Tokens;
+global using System.IdentityModel.Tokens.Jwt;
+global using System.Security.Claims;
+global using System.Text;
+global using System.Web;
+global using Microsoft.AspNetCore.Authorization;
+global using ParkIstra.Contexts.Main;

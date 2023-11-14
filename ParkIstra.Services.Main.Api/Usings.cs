@@ -1,0 +1,19 @@
+﻿global using ParkIstra.Contexts.Main;
+global using ParkIstra.Libraries.ASP;
+global using ParkIstra.Libraries.EF;
+global using ParkIstra.Libraries.OData;
+global using ParkIstra.Models.Main;
+global using ParkIstra.Services.MainApi.Extensions;
+global using Microsoft.AspNetCore.Diagnostics;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.OData;
+global using Microsoft.AspNetCore.OData.Results;
+global using Microsoft.EntityFrameworkCore;
+global using System.Text.Encodings.Web;
+global using System.Text.Json.Serialization;
+global using ParkIstra.Libraries.ASP.EF;
+global using ParkIstra.Contexts.Util;
+global using ParkIstra.Models.Util;
+global using Microsoft.EntityFrameworkCore.ChangeTracking;
+global using System.Net.Mime;
+

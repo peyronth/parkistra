@@ -1,0 +1,21 @@
+:root {
+    --parkistra-colorMain-green: #8BC53E;
+    --parkistra-colorSecondary-green: #88b150; 
+    --parkistra-colorTeritary-blue: #005163;
+    --parkistra-colorQuaternary-blue: #457F8B;
+    --parkistra-colorQuinary-grey: #A7AE9C;
+    --parkistra-colorSenary-darkGrey: #43493A;
+    --parkistra-colorBackground-beige: #E8F6D0;
+    --parkistra-colorBackground-blue: #BFFBFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: var(--parkistra-colorBackground-beige);
+}

@@ -1,0 +1,17 @@
+﻿@typeparam TItem
+
+<table class="@TableCssClass">
+    <thead>
+        <tr>@TableHeader</tr>
+    </thead>
+    <tbody>
+        @if (NoItemsText is not null)
+        {
+            <tr><h5>@NoItems</h5></tr>
+        }
+        @foreach (var item in Items)
+        {
+            <tr>@TableRow(item)</tr>
+        }
+    </tbody>
+</table>
