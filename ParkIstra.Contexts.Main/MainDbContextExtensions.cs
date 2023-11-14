@@ -1,6 +1,4 @@
-﻿using ParkIstra.Contexts.Main;
-
-namespace ParkIstra.Contexts.Main;
+﻿namespace ParkIstra.Contexts.Main;
 
 public static class MainDbContextExtensions
 {
@@ -19,7 +17,8 @@ public static class MainDbContextExtensions
                 .UseSqlServer(connectionString,
                     sqlServerOptionsAction => sqlServerOptionsAction
                         .UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery)
-                        .CommandTimeout(5))
+                        .CommandTimeout(5)
+                        .MigrationsAssembly("ParkIstra.Services.MainApi")) // Specify the migrations assembly here
                 );
     }
 }
