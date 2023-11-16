@@ -1,0 +1,25 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "This website is developed for ParkIstra, a slovenian association, as part of our studies at UP Famnit. Our development team consists of three members :",
+  "main": "index.js",
+  "scripts": {
+    "build-api": "cd ParkIstra.Services.Main.Api && dotnet build && dotnet run",
+    "build-blazor": "cd ParkIstra.AppBlazor.Client && dotnet build && dotnet run",
+    "build-all": "npm-run-all -p build-api build-blazor"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peyronth/parkistra.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peyronth/parkistra/issues"
+  },
+  "homepage": "https://github.com/peyronth/parkistra#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

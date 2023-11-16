@@ -24,14 +24,16 @@ To run the application, you can either:
    - Launch `ParkIstra.sln` using Visual Studio.
 
 2. **Use the command line:**
+   - Get node installed [Node.js](https://nodejs.org/en/download/)
+   - Get npm installed [npm](https://www.npmjs.com/get-npm)
    - Navigate to the project's root directory.
-   - Run the following commands:
+   - Run the following commands for your first run:
      ```bash
-     dotnet build
+     npm install
      ```
-    - Repeat this command for each subproject folder : 
+    - Build and launch the application : 
       ```bash
-      dotnet run
+      npm run buil-all
       ```
     - The application should now be running on localhost : `http://localhost:5270/`
 
