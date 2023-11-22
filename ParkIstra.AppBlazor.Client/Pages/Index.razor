@@ -1,16 +1,22 @@
 ﻿@page "/"
-@layout MainLayoutNav
+@layout ParkIstra.AppBlazor.Client.Shared.MainLayoutNav;
 
 @using ParkIstra.Models.Main;
 @using System.Diagnostics.CodeAnalysis;
 @using Microsoft.AspNetCore.Components;
 @using ParkIstra.AppInterfaces;
 @using ParkIstra.Libraries.Blazor;
+@using Microsoft.Extensions.Localization;
+@using ParkIstra.AppBlazor.Client;
+@inject IStringLocalizer<App> L;
+
+@namespace ParkIstra.AppBlazor.Client
+
 
 <section class="home-top">
     <a href="/" title="logo" class="home-top-logo"><img src="/img/logo4.png" alt="logo" /></a>
     <span class="home-top-line"></span>
-    <button type="button">Become a volunteer</button><button type="button">I need help</button>
+    <button type="button">@L["helloWorld"]</button><button type="button">I need help</button>
 </section>
 <section>
     <div class="feed-facebook">
@@ -33,9 +39,9 @@
     </div>
     <div class="feed-testimonial">
          <h3>Testimonials</h3>
-        @if (Testimonials is not null)
+        @if (TestimonialsList is not null)
         {
-        @foreach (var item in Testimonials)
+        @foreach (var item in TestimonialsList)
         {
         <div class="testimonial">
         <p>

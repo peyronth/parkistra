@@ -5,12 +5,12 @@ using Microsoft.AspNetCore.Components;
 using ParkIstra.AppInterfaces;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
-namespace ParkIstra.AppBlazor.Client.Pages;
+namespace ParkIstra.AppBlazor.Client;
 public partial class Index
 {
     #region Lists
     [AllowNull]
-    public List<Testimonials> Testimonials { get; set; }
+    public List<Testimonials> TestimonialsList { get; set; }
 
     #endregion
 
@@ -33,7 +33,7 @@ public partial class Index
     #endregion
     protected override async Task OnInitializedAsync()
     {
-        if (Testimonials is not null) return;
+        if (TestimonialsList is not null) return;
 
         await LoadTestimonialsAsync();
     }
@@ -49,7 +49,7 @@ public partial class Index
         BlazorProblemDetails = response.BlazorProblemDetails;
         if (response.IsSuccess)
         {
-            Testimonials = response.Many ?? new();
+            TestimonialsList = response.Many ?? new();
         }
 
     }
