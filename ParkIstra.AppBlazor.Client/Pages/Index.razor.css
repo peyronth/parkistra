@@ -2,6 +2,7 @@
     position: relative;
     height: 40vh;
     width: 100%;
+    margin-bottom: 5vh;
 }
 .home-top button{
     display: block;
