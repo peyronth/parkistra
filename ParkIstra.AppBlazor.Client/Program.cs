@@ -12,16 +12,16 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.JSInterop;
 using System.Globalization;
 using System.Net;
-using Microsoft.Extensions.Localization;
-using System.Collections.Generic;
+using AKSoftware.Localization.MultiLanguages;
+using System.Reflection;
 
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
-builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
-builder.Services.AddScoped<IStringLocalizer<App>,StringLocalizer<App>>();
+builder.Services.AddLanguageContainer(Assembly.GetExecutingAssembly());
+
 
 var httpClient = new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) };
 var isDevelopment = builder.HostEnvironment.IsDevelopment();

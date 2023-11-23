@@ -8,7 +8,7 @@
 @using ParkIstra.Libraries.Blazor;
 @using Microsoft.Extensions.Localization;
 @using ParkIstra.AppBlazor.Client;
-@inject IStringLocalizer<App> L;
+@inject ILanguageContainerService LanguageContainer;
 
 @namespace ParkIstra.AppBlazor.Client
 
@@ -16,7 +16,7 @@
 <section class="home-top">
     <a href="/" title="logo" class="home-top-logo"><img src="/img/logo4.png" alt="logo" /></a>
     <span class="home-top-line"></span>
-    <button type="button">@L["helloWorld"]</button><button type="button">I need help</button>
+    <button type="button">@LanguageContainer.Keys["HelloWorld"]</button><button type="button">I need help</button>
 </section>
 <section>
     <div class="feed-facebook">
