@@ -1,4 +1,4 @@
-﻿    using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace ParkIstra.Models.Main;
 public class Project
@@ -8,5 +8,7 @@ public class Project
     public string? Name { get; set; }
     [Required(ErrorMessage = "This field is required")]
     public string? Description { get; set; }
+
+
 
 }

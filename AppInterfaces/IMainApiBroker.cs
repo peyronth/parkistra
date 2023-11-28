@@ -19,4 +19,14 @@ public interface IMainApiBroker
     Task<Response<Testimonials>> DeleteTestimonialAsync(string uri);
 
     #endregion
+
+    #region Authentiacion
+    Task<Response<Response>> RegisterAsync(string uri, ParkIstra.Models.Main.Register user);
+    Task<Response<Response>> LoginAsync(string uri, ParkIstra.Models.Main.Login model);
+    Task<Response<Response>> SendResetPwdLink(string uri, bool isSingle = true);
+    Task<Response<Response>> ConfirmPwdLink(string uri, bool isSingle = true);
+    Task<Response<Response>> ConfirmEmail(string uri, bool isSingle = true);
+    Task<Response<ApplicationUser>> GetUserByEmail(string uri, bool isSingle = true);
+
+    #endregion
 }

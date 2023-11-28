@@ -25,75 +25,64 @@ public class AuthenticationController : ControllerBase, IDisposable
         _emailSender = emailSender;
     }
 
-    //[HttpPost]
-    //[Route("register")]
-    //public async Task<IActionResult> Register(Register user)
-    //{
-    //    if (ModelState.IsValid)
-    //    {
-    //        ApplicationUser appUser = new ApplicationUser
-    //        {
-    //            UserName = user.Email,
-    //            Email = user.Email,
-    //            PhoneNumber = user.KontaktPodaci,
-    //            TwoFactorEnabled = true,
-    //            UserInfo = new UserInfo()
-    //            {
-    //                UserType = (int)user.UserType,
-    //                IdentifikacioniBroj = user.IdentifikacioniBroj,
-    //                Naziv = user.Naziv,
-    //                Adresa = user.Adresa,
-    //                OdgovornoLice = user.OdgovornoLice,
-    //                KontaktPodaci = user.KontaktPodaci
-    //            }
-    //        };
+    [HttpPost]
+    [Route("register")]
+    public async Task<IActionResult> Register(Register user)
+    {
+        if (ModelState.IsValid)
+        {
+            ApplicationUser appUser = new ApplicationUser
+            {
+                UserName = user.Email,
+                Email = user.Email
+            };
 
-    //        IdentityResult result = await userManager.CreateAsync(appUser, user.password);
+            IdentityResult result = await userManager.CreateAsync(appUser, user.password);
 
-    //        if (result.Succeeded)
-    //        {
-    //            var token = HttpUtility.UrlEncode(await userManager.GenerateEmailConfirmationTokenAsync(appUser));
-    //            var confirmationlink = "https://localhost:7158/Authentication/ConfirmEmailLink?token=" + token + "&email=" + user.Email;
+            if (result.Succeeded)
+            {
+                var token = HttpUtility.UrlEncode(await userManager.GenerateEmailConfirmationTokenAsync(appUser));
+                var confirmationlink = "https://localhost:7158/Authentication/ConfirmEmailLink?token=" + token + "&email=" + user.Email;
 
-    //            var message = new Messages(new string[] { appUser.Email },
-    //                "Potvrda email adrese",
-    //                "Potvrdite ovaj email klikom ispod kako biste aktivirali nalog.",
-    //                "Poštovani,",
-    //                $"{confirmationlink}",
-    //                "Ne brinite ukoliko niste zahtijevali potvrdu emaila. I dalje je zaštićen i niko nema pristup." +
-    //                "Najvjerovatnije - neko je greškom ukucao ovaj email prilikom kreiranja naloga.");
-    //            _emailSender.SendEmailAsync(message);
-    //        }
-    //        var err = "";
-    //        if (result.Succeeded)
-    //            return Ok(new Response
-    //            {
-    //                Status = true,
-    //                Message = "Account created successfuly.",
-    //                StatusCode = System.Net.HttpStatusCode.OK.ToString(),
-    //                Data = "Confirm your email to continue."
-    //            });
-    //        else
-    //        {
-    //            foreach (IdentityError error in result.Errors)
-    //                err = err + "," + error.Description;
+                var message = new Messages(new string[] { appUser.Email },
+                    "Potvrda email adrese",
+                    "Potvrdite ovaj email klikom ispod kako biste aktivirali nalog.",
+                    "Poštovani,",
+                    $"{confirmationlink}",
+                    "Ne brinite ukoliko niste zahtijevali potvrdu emaila. I dalje je zaštićen i niko nema pristup." +
+                    "Najvjerovatnije - neko je greškom ukucao ovaj email prilikom kreiranja naloga.");
+                _emailSender.SendEmailAsync(message);
+            }
+            var err = "";
+            if (result.Succeeded)
+                return Ok(new Response
+                {
+                    Status = true,
+                    Message = "Account created successfuly.",
+                    StatusCode = System.Net.HttpStatusCode.OK.ToString(),
+                    Data = "Confirm your email to continue."
+                });
+            else
+            {
+                foreach (IdentityError error in result.Errors)
+                    err = err + "," + error.Description;
 
-    //            return Ok(new Response
-    //            {
-    //                Status = false,
-    //                Message = "Error.",
-    //                StatusCode = System.Net.HttpStatusCode.BadRequest.ToString(),
-    //                Data = err
-    //            });
-    //        }
-    //    }
-    //    return Ok(new Response
-    //    {
-    //        Status = false,
-    //        Message = "Invalid model state",
-    //        StatusCode = System.Net.HttpStatusCode.BadRequest.ToString()
-    //    });
-    //}
+                return Ok(new Response
+                {
+                    Status = false,
+                    Message = "Error.",
+                    StatusCode = System.Net.HttpStatusCode.BadRequest.ToString(),
+                    Data = err
+                });
+            }
+        }
+        return Ok(new Response
+        {
+            Status = false,
+            Message = "Invalid model state",
+            StatusCode = System.Net.HttpStatusCode.BadRequest.ToString()
+        });
+    }
 
     [HttpPost]
     [Route("login")]
@@ -126,7 +115,7 @@ public class AuthenticationController : ControllerBase, IDisposable
                 Status = true,
                 token = new JwtSecurityTokenHandler().WriteToken(token),
                 id = user.Id.ToString(),
-                FullName = user.UserInfo.Naziv,
+                FullName = "Andrija and Thomas",
             });
         }
         return Unauthorized();

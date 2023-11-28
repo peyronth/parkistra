@@ -4,7 +4,7 @@ namespace ParkIstra.Services.MainApi.Controllers;
 
 [Route("[controller]")]
 [ApiController]
-//[Authorize]
+[Authorize]
 public class TestimonialsController : ControllerBase, IDisposable
 {
 
