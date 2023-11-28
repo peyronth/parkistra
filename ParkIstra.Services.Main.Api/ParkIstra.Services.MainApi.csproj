@@ -29,6 +29,7 @@
 		<ProjectReference Include="..\ParkIstra.Libraries.ASP\ParkIstra.Libraries.ASP.csproj" />
 		<ProjectReference Include="..\ParkIstra.Libraries.EF\ParkIstra.Libraries.EF.csproj" />
 		<ProjectReference Include="..\ParkIstra.Libraries.OData\ParkIstra.Libraries.OData.csproj" />
+		<ProjectReference Include="..\ParkIstra.Models.Main\ParkIstra.Models.Main.csproj" />
 		<ProjectReference Include="..\ParkIstra.Models.Shared\ParkIstra.Models.Shared.csproj" />
 		<ProjectReference Include="..\ParkIstra.Models.Util\ParkIstra.Models.Util.csproj" />
 		<ProjectReference Include="..\ParkIstra.Services.EmailSender\ParkIstra.Services.EmailSender.csproj" />

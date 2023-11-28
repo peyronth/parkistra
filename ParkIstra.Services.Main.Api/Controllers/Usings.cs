@@ -1,4 +1,5 @@
 ﻿global using ParkIstra.Models.Shared;
+global using ParkIstra.Models.Main;
 global using ParkIstra.Services.EmailsSender;
 global using Microsoft.AspNetCore.Identity;
 global using Microsoft.IdentityModel.Tokens;
