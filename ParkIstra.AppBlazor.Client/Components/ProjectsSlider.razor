@@ -1,7 +1,7 @@
 <div class="project-slider">
     @foreach (var project in Projects.Take(Limit))
     {
-        <div class="project-slide-container @(activeSlideIndex == project.Id ? "project-slide-active" : "")" style="background-image: url('@project.Image');" @onclick="() => ToggleActiveSlide(project.Id)">
+        <div class="project-slide-container @(activeSlideIndex == project.Id ? "project-slide-active" : "")" style="background-image: url('@project.Images.FirstOrDefault()');" @onclick="() => ToggleActiveSlide(project.Id)">
             <h3>@project.Name</h3>
             <div class="project-details">
                 <p>@project.Description</p>
