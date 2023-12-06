@@ -25,6 +25,7 @@ _ = builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(buil
 
 _ = builder.Services.AddSingleton<IStateContainer, StateContainer>();
 _ = builder.Services.AddScoped<ErrorHandler>(); //testservice
+_ = builder.Services.AddSingleton<TranslateEngine>();
 
 #region unused
 _ = builder.Services.AddScoped<IMainApiService, MainApiService>();
