@@ -7,9 +7,13 @@
 @using ParkIstra.AppInterfaces;
 @using ParkIstra.Libraries.Blazor;
 @inject NavigationManager NavigationManager
-@inject TranslateEngine GlobalDictionary
+@inject ITranslationService TranslationService
 
-<h1>@TranslateEngine.GlobalDictionary["helloWorld"]</h1>
+
+
+
+<h1>@TranslationService.Translate("helloWorld")</h1>
+<h1>@TranslationService.Translate("helloWorld2")</h1>
 <section class="home-top">
     <a href="/" title="logo" class="home-top-logo"><img src="/img/logo4.png" alt="logo" /></a>
     <span class="home-top-line"></span>

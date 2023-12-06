@@ -12,6 +12,8 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.JSInterop;
 using System.Globalization;
 using System.Net;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Localization;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
@@ -25,7 +27,24 @@ _ = builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(buil
 
 _ = builder.Services.AddSingleton<IStateContainer, StateContainer>();
 _ = builder.Services.AddScoped<ErrorHandler>(); //testservice
-_ = builder.Services.AddSingleton<TranslateEngine>();
+
+
+_ = builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
+_ = builder.Services.AddScoped<ITranslationService, TranslationService>();
+
+var supportedCultures = new[]
+{
+    new CultureInfo("fr-FR"),
+    // ... d'autres cultures supportées
+};
+
+builder.Services.Configure<RequestLocalizationOptions>(options =>
+{
+    options.DefaultRequestCulture = new RequestCulture("fr-FR");
+    options.SupportedCultures = supportedCultures;
+    options.SupportedUICultures = supportedCultures;
+});
+
 
 #region unused
 _ = builder.Services.AddScoped<IMainApiService, MainApiService>();
@@ -52,7 +71,6 @@ _ = builder.Services.AddSingleton<BrokerFactory>();
 
 _ = builder.Services.AddJsonSerializerOptions();
 _ = await builder.Configuration.AddConfigurationsAsync(httpClient);
-
 
 
 var host = builder.Build();
