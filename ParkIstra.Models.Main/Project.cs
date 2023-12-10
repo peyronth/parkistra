@@ -8,5 +8,7 @@ public class Project
     public string? Name { get; set; }
     [Required(ErrorMessage = "This field is required")]
     public string? Description { get; set; }
+    [Required(ErrorMessage = "This field is required")]
+    public List<string>? Images { get; set; }
 
 }

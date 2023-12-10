@@ -1,29 +1,20 @@
 <div class="project-slider">
-    <div class="project-slide-container @(activeSlideIndex == 1 ? "project-slide-active" : "")" style="background-image: url('http://parkistra.com/en/wp-content/uploads/2017/10/IMG_9383-Copia.jpg');" @onclick="() => ToggleActiveSlide(1)">
-        <h3>Helping local communities</h3>
-        <div class="project-details">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a title="Read More" class="project-link" href="/projects/project/?id=3">Read More ></a>
+    @foreach (var project in Projects.Take(Limit))
+    {
+        <div class="project-slide-container @(activeSlideIndex == project.Id ? "project-slide-active" : "")" style="background-image: url('@project.Images.FirstOrDefault()');" @onclick="() => ToggleActiveSlide(project.Id)">
+            <h3>@project.Name</h3>
+            <div class="project-details">
+                <p>@project.Description</p>
+                <a title="Read More" class="project-link" href="/projects/project/?id=@project.Id">Read More ></a>
+            </div>
         </div>
-    </div>
-    <div class="project-slide-container @(activeSlideIndex == 2 ? "project-slide-active" : "")" style="background-image: url('http://parkistra.com/en/wp-content/uploads/2017/06/20170218_094211.jpg');" @onclick="() => ToggleActiveSlide(2)">
-        <h3>Supporting local organizations</h3>
-        <div class="project-details">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a title="Read More" class="project-link" href="/projects/project/?id=3">Read More ></a>
-        </div>
-    </div>
-    <div class="project-slide-container @(activeSlideIndex == 3 ? "project-slide-active" : "")" style="background-image: url('http://parkistra.com/en/wp-content/uploads/2018/04/20170703_093011.jpg');" @onclick="() => ToggleActiveSlide(3)">
-        <h3>Preserving istrian heritage</h3>
-        <div class="project-details">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a title="Read More" class="project-link" href="/projects/project/?id=3">Read More ></a>
-        </div>
-    </div>
+    }
 </div>
 
 @code {
+    [Parameter] public int Limit { get; set; } = int.MaxValue;
     private int activeSlideIndex = 1;
+    
 
     private EventCallback ToggleActiveSlide(int clicked)
     {
