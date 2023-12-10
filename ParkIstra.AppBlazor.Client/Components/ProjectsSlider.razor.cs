@@ -23,7 +23,7 @@ public partial class ProjectsSlider
     private async Task LoadProjectsAsync(string? queryString = "")
     {
         
-        //Mock data
+        //TODO : remove mock
         Projects = new List<Project>
         {
             new Project { Id = 122, Name = "Project 1", Description = "Description 1", Images = new List<string> { "http://parkistra.com/en/wp-content/uploads/2017/06/20170218_094211.jpg" } },
