@@ -35,7 +35,7 @@ public partial class ProjectsSlider
             new Project { Id = 187, Name = "Project 7", Description = "Description 7", Images = new List<string> { "http://parkistra.com/en/wp-content/uploads/2017/06/20170218_094211.jpg" } },
             new Project { Id = 198, Name = "Project 8", Description = "Description 8", Images = new List<string> { "http://parkistra.com/en/wp-content/uploads/2018/04/20170703_093011.jpg" } }
         };
-
+        activeSlideIndex = Projects.FirstOrDefault()?.Id ?? 0;
     }
 
     [Inject, AllowNull]
