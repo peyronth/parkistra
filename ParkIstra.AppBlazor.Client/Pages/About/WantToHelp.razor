@@ -1,2 +1,47 @@
 @page "/about/wantToHelp/"
 @layout MainLayoutNav
+
+<h3>Want to Help</h3>
+
+<form>
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+    </div>
+    <div class="form-group">
+        <label>Residency</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="residency" id="slovenianResident" value="slovenian">
+            <label class="form-check-label" for="slovenianResident">
+                Slovenian Resident
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="residency" id="temporaryResident" value="temporary">
+            <label class="form-check-label" for="temporaryResident">
+                Temporary Resident
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="skills">Skills</label>
+        <textarea class="form-control" id="skills" rows="3" placeholder="Enter your skills"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="motivations">Motivations</label>
+        <textarea class="form-control" id="motivations" rows="3" placeholder="Enter your motivations"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="desires">Desires</label>
+        <textarea class="form-control" id="desires" rows="3" placeholder="Enter your desires"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+@code {
+    //TODO: Add form submission email sending
+}
