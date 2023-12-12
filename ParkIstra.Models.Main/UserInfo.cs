@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ParkIstra.Models.Main;
-public class UserInfo
+public class UserInfo // REMOVE!
 {
     public UserInfo()
     {

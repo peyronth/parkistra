@@ -1,13 +1,13 @@
 namespace ParkIstra.Contexts.Main.Configurations;
 
-public class TestimonialsConfiguration: IEntityTypeConfiguration<Testimonials>
+public class TestimonialConfiguration: IEntityTypeConfiguration<Testimonial>
 {
-    public void Configure(EntityTypeBuilder<Testimonials> entity)
+    public void Configure(EntityTypeBuilder<Testimonial> entity)
     {
-        _ = entity.ToTable("Testimonials"/*, t => t.IsTemporal()*/);
+        _ = entity.ToTable("Testimonial"/*, t => t.IsTemporal()*/);
 
         _ = entity.Property(e => e.Id)
-            .HasColumnName("TestimonialsId");
+            .HasColumnName("TestimonialId");
 
         _ = entity.Property(e => e.Content)
             .HasColumnName("Content")

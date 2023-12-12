@@ -7,7 +7,8 @@ public partial class MainApiBroker : IMainApiBroker
         BrokerFactory brokerFactory)
     {
         ProjectsBroker = brokerFactory.Create<Project>(httpClient, blazorProblemFactory);
-        TestimonialsBroker = brokerFactory.Create<Testimonials>(httpClient, blazorProblemFactory);
+        TestimonialsBroker = brokerFactory.Create<Testimonial>(httpClient, blazorProblemFactory);
+        ImagesBroker = brokerFactory.Create<Image>(httpClient, blazorProblemFactory);
     }
 
     #region Project
@@ -25,20 +26,35 @@ public partial class MainApiBroker : IMainApiBroker
     #endregion
 
     #region Testimonials
-    public async Task<Response<Testimonials>> GetTestimonialsAsync(string uri, bool isSingle = false) =>
+    public async Task<Response<Testimonial>> GetTestimonialsAsync(string uri, bool isSingle = false) =>
         await TestimonialsBroker.GetAsync(uri, isSingle);
-    public async Task<Response<Testimonials>> GetTestimonialByIDAsync(string uri, bool isSingle = true) =>
+    public async Task<Response<Testimonial>> GetTestimonialByIDAsync(string uri, bool isSingle = true) =>
          await TestimonialsBroker.GetAsync(uri, isSingle);
-    public async Task<Response<Testimonials>> PostTestimonialAsync(string uri, Testimonials testimonial) =>
+    public async Task<Response<Testimonial>> PostTestimonialAsync(string uri, Testimonial testimonial) =>
         await TestimonialsBroker.PostAsync(uri, testimonial);
-    public async Task<Response<Testimonials>> PutTestimonialAsync(string uri, Testimonials testimonial) =>
+    public async Task<Response<Testimonial>> PutTestimonialAsync(string uri, Testimonial testimonial) =>
         await TestimonialsBroker.PutAsync(uri, testimonial);
-    public async Task<Response<Testimonials>> DeleteTestimonialAsync(string uri) =>
+    public async Task<Response<Testimonial>> DeleteTestimonialAsync(string uri) =>
         await TestimonialsBroker.DeleteAsync(uri);
+
+    #endregion
+    
+    #region Image
+    public async Task<Response<Image>> GetImagesAsync(string uri, bool isSingle = false) =>
+        await ImagesBroker.GetAsync(uri, isSingle);
+    public async Task<Response<Image>> GetImageByIDAsync(string uri, bool isSingle = true) =>
+         await ImagesBroker.GetAsync(uri, isSingle);
+    public async Task<Response<Image>> PostImageAsync(string uri, Image image) =>
+        await ImagesBroker.PostAsync(uri, image);
+    public async Task<Response<Image>> PutImageAsync(string uri, Image image) =>
+        await ImagesBroker.PutAsync(uri, image);
+    public async Task<Response<Image>> DeleteImageAsync(string uri) =>
+        await ImagesBroker.DeleteAsync(uri);
 
     #endregion
 
     private Broker<Project> ProjectsBroker { get; init; }
-    private Broker<Testimonials> TestimonialsBroker { get; init; }
+    private Broker<Testimonial> TestimonialsBroker { get; init; }
+    private Broker<Image> ImagesBroker { get; init; }
 
 }
