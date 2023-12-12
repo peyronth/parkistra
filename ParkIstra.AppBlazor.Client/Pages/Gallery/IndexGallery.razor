@@ -1,2 +1,14 @@
 @page "/gallery/"
 @layout MainLayoutNav
+
+<h1>Gallery</h1>
+
+@foreach (var project in Projects) {
+    @foreach (var image in project.Images) {
+        <div class="gallery-image">
+            <img src="@image" alt="Image @project.Name"/>
+            <h3>@project.Name</h3>
+            <a href="/projects/project?id=@project.Id">See More</a>
+        </div>
+    }
+}
