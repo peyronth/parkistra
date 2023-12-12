@@ -10,7 +10,7 @@ public partial class Index
 {
     #region Lists
     [AllowNull]
-    public List<Testimonials> Testimonials { get; set; }
+    public List<Testimonial> Testimonials { get; set; }
 
     #endregion
 

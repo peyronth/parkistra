@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 
 namespace ParkIstra.Models.Main;
-public class Testimonials
+public class Testimonial
 {
     public int Id { get; init; }
     [Required(ErrorMessage = "This field is required")]

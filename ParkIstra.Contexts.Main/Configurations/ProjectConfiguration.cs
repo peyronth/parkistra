@@ -17,6 +17,12 @@ public class ProjectConfiguration: IEntityTypeConfiguration<Project>
             .HasColumnName("Description")
             .IsRequired();
 
+        _ = entity.HasOne(d => d.ApplicationUser)
+            .WithMany(p => p.Projects)
+            .HasForeignKey(d => d.UserId)
+            .OnDelete(DeleteBehavior.ClientSetNull)
+            .HasConstraintName("FK_Projects_ApplicationUser");
+
     }
 }
 

@@ -23,7 +23,7 @@ public partial class ProjectItem
     private async Task LoadProjectAsync(string? queryString = "")
     {
         //TODO : remove mock
-        Project = new Project { Id = 122, Name = "Project 1", Description = "Description 1", Images = new List<string> { "http://parkistra.com/en/wp-content/uploads/2017/06/20170218_094211.jpg" } };
+        Project = new Project { Id = 122, Name = "Project 1", Description = "Description 1" };
     }
 
     [Inject, AllowNull]

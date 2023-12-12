@@ -25,10 +25,7 @@ public partial class IndexGallery
         //TODO : remove mock
         Projects = new List<Project>
         {
-            new Project { Id = 122, Name = "Project 1", Description = "Description 1", Images = new List<string> { "http://parkistra.com/en/wp-content/uploads/2017/06/20170218_094211.jpg" } },
-            new Project { Id = 132, Name = "Project 2", Description = "Description 2", Images = new List<string> { "http://parkistra.com/en/wp-content/uploads/2018/04/20170703_093011.jpg" } },
-            new Project { Id = 143, Name = "Project 3", Description = "Description 3", Images = new List<string> { "http://parkistra.com/en/wp-content/uploads/2017/06/20170218_094211.jpg", "http://parkistra.com/en/wp-content/uploads/2018/04/20170703_093011.jpg" } },
-            new Project { Id = 154, Name = "Project 4", Description = "Description 4", Images = new List<string> { "http://parkistra.com/en/wp-content/uploads/2018/04/20170703_093011.jpg" } }
+            new Project { Id = 122, Name = "Project 1", Description = "Description 1"}
         };
 
     }

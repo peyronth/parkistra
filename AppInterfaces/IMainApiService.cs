@@ -13,11 +13,20 @@ public interface IMainApiService
 
     #region Testimonials
 
-    Task<Response<Testimonials>> GetTestimonialsAsync(ODataQuery? query = null);
-    Task<Response<Testimonials>> GetTestimonialByIDAsync(int id, ODataQuery? query = null);
-    Task<Response<Testimonials>> AddTestimonialAsync(Testimonials testimonial);
-    Task<Response<Testimonials>> UpdateTestimonialAsync(int id, Testimonials testimonial);
-    Task<Response<Testimonials>> DeleteTestimonialAsync(int id);
+    Task<Response<Testimonial>> GetTestimonialsAsync(ODataQuery? query = null);
+    Task<Response<Testimonial>> GetTestimonialByIDAsync(int id, ODataQuery? query = null);
+    Task<Response<Testimonial>> AddTestimonialAsync(Testimonial testimonial);
+    Task<Response<Testimonial>> UpdateTestimonialAsync(int id, Testimonial testimonial);
+    Task<Response<Testimonial>> DeleteTestimonialAsync(int id);
+
+    #endregion
+
+    #region Image
+    Task<Response<Image>> GetImagesAsync(ODataQuery? query = null);
+    Task<Response<Image>> GetImageByIDAsync(int id, ODataQuery? query = null);
+    Task<Response<Image>> AddImageAsync(Image image);
+    Task<Response<Image>> UpdateImageAsync(int id, Image image);
+    Task<Response<Image>> DeleteImageAsync(int id);
 
     #endregion
 
