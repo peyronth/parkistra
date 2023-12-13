@@ -28,18 +28,18 @@ public partial class LoginPage
         {
             if (response.Single != null && response.Single.Message.Equals("Confirm mail"))
             {
-                await ErrorHandler.HandleRequestError("Greška pri logovanju. Molimo Vas potvrdite mail.");
+                Console.WriteLine("Confirm mail.");
             }
             else if (BlazorProblemDetails != null)
             {
-                await ErrorHandler.HandleRequestError("Pogrešni podaci.");
+                Console.WriteLine("Wrong informations.");
+                Console.WriteLine(BlazorProblemDetails.Title);
             }
             return;
         }
         if (response.IsSuccess) { 
-      
             await jsr.InvokeVoidAsync("localStorage.setItem", "jwt", $"{response.Single.token}").ConfigureAwait(false);
-            NavigationManager.NavigateTo($"/samoprocjena?email={LoginModel.Email}");
+            NavigationManager.NavigateTo("/member/");
         }
     }
     private async void ForgotPassword()
