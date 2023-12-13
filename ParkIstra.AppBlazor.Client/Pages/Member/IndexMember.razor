@@ -1,2 +1,22 @@
 @page "/member/"
 @layout MainLayoutNav
+
+@inject NavigationManager NavigationManager
+
+<h1>Actions</h1>
+
+<!-- TODO: if user connected -->
+@if (true)
+{
+    <!-- TODO: if user is admin -->
+    if (true) {
+        <button class="btn btn-primary" @onclick='() => NavigationManager.NavigateTo("/member/admin/manageProjects/")' >Manage Project</button>
+        <button class="btn btn-primary" @onclick='() => NavigationManager.NavigateTo("/member/admin/manageMembers/")' >Manage Users</button>
+        <button class="btn btn-primary" @onclick='() => NavigationManager.NavigateTo("/member/admin/writeTestimonial/")' >Write Testimonial</button>       
+    }
+    <button class="btn btn-primary" @onclick='() => NavigationManager.NavigateTo("/member/writeProject/")' >Write Project</button>
+}
+else
+{
+    NavigationManager.NavigateTo("member/login/");
+}
