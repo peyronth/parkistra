@@ -6,7 +6,9 @@
   "scripts": {
     "build-api": "cd ParkIstra.Services.Main.Api && dotnet build && dotnet run",
     "build-blazor": "cd ParkIstra.AppBlazor.Client && dotnet build && dotnet run",
-    "build-all": "npm-run-all -p build-api build-blazor"
+    "run-api": "cd ParkIstra.Services.Main.Api && dotnet run",
+    "run-blazor": "cd ParkIstra.AppBlazor.Client && dotnet run",
+    "build-all": "dotnet build && npm-run-all -p run-api run-blazor"
   },
   "repository": {
     "type": "git",
