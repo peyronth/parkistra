@@ -1,5 +1,6 @@
-﻿    using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using System.Security.Claims;
+
 
 namespace ParkIstra.Models.Main;
 public class Project
@@ -15,7 +16,6 @@ public class Project
     public string? Description { get; set; }
     public bool Drafted { get; set; }
     public string UserId { get; set; }
-
     public ApplicationUser ApplicationUser { get; set; } = null!;
     public ICollection<Image> Images { get; set; }
 }

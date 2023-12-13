@@ -1,4 +1,5 @@
-﻿
+﻿@inject NavigationManager NavigationManager
+
 <div id='main-nav' class="@NavMenuCssClass">
     <div class='nav-container'>
         <span id='nav-burger-open' class="material-symbols-outlined" @onclick="ToggleNavMenu">menu</span>
@@ -12,6 +13,7 @@
             <a href="/support/">Support us</a>
             <a href="/contact/">Contact</a>
         </nav>
+        <span class="material-symbols-outlined nav-user" @onclick='() => NavigationManager.NavigateTo("/member/")'>account_circle</span>
     </div>
     <div id='nav-close-zone'>
     </div>

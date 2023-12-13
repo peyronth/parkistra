@@ -1,0 +1,43 @@
+﻿@page "/login"
+@using ParkIstra.AppBlazor.Client
+@using ParkIstra.Models.Main
+@using System.ComponentModel.DataAnnotations
+@inject NavigationManager NavigationManager
+@inject IJSRuntime jsr
+
+<div class="col d-flex justify-content-center">
+
+    <div class="card shadow p-3 mt-2 rounded" style="width: 27rem; min-height:34rem">
+
+        <div class="card-body">
+
+            <div class="text-center mb-2">
+
+                <img src="./images/logoEInspektor2.png" class="img-fluid" alt="Sample image" style="width:8rem;">
+
+            </div>
+
+            <div class="col-md-12">
+                <form action="https://localhost:7174/Authentication/login" method="post">
+                    <div class="mb-1">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" value="@LoginModel.Email" required />
+                    </div>
+                    <div class="mb-4">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" value="@LoginModel.password" required />
+                    </div>
+                    <input type="hidden" name="UserType" value="1" />
+
+                    <div class="d-flex flex-row justify-content-start mt-4">
+                        <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                            <button type="submit" class="btn btn-primary btn-md">Register</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
