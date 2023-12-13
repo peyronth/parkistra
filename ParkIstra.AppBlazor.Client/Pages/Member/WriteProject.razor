@@ -1,2 +1,39 @@
 @page "/member/writeProject/"
 @layout MainLayoutNav
+
+@using ParkIstra.Models.Main;
+@using ParkIstra.AppInterfaces;
+@inject IMainApiService MainApiService;
+@inject NavigationManager NavigationManager;
+
+<h3>Write Project</h3>
+
+<EditForm Model="@project" OnValidSubmit="CreateProject">
+    <div class="form-group">
+        <label for="name">Title</label>
+        <InputText id="name" class="form-control" @bind-Value="project.Name" />
+    </div>
+
+    <div class="form-group">
+        <label for="description">Description</label>
+        <InputTextArea id="description" class="form-control" @bind-Value="project.Description" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+</EditForm>
+
+@code {
+    private Project project = new Project();
+
+    private async void CreateProject()
+    {
+        var response = await MainApiService.AddProjectAsync(project);
+        if (response.IsSuccess)
+        {
+            NavigationManager.NavigateTo("/", true);
+        } else
+        {
+            Console.WriteLine(response);
+        }
+    }
+}
