@@ -1,13 +1,16 @@
 <div class="project-slider">
-    @foreach (var project in Projects.Take(Limit))
+    @if (Projects != null)
     {
-        <div class="project-slide-container @(activeSlideIndex == project.Id ? "project-slide-active" : "")" style="background-image: url('@project.Images.FirstOrDefault()');" @onclick="() => ToggleActiveSlide(project.Id)">
-            <h3>@project.Name</h3>
-            <div class="project-details">
-                <p>@project.Description</p>
-                <a title="Read More" class="project-link" href="/projects/project/?id=@project.Id">Read More ></a>
+        @foreach (var project in Projects.Take(Limit))
+        {
+            <div class="project-slide-container @(activeSlideIndex == project.Id ? "project-slide-active" : "")" style="background-image: url('@(project.Images.FirstOrDefault()?.Url)');" @onclick="() => ToggleActiveSlide(project.Id)">
+                <h3>@project.Name</h3>
+                <div class="project-details">
+                    <p>@(project.Description?.Length > 130 ? project.Description?.Substring(0, 127) + "..." : project.Description)</p>
+                    <a title="Read More" class="project-link" href="/projects/project/?id=@project.Id">Read More ></a>
+                </div>
             </div>
-        </div>
+        }
     }
 </div>
 
