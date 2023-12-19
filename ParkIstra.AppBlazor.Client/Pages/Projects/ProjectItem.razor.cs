@@ -10,12 +10,12 @@ public partial class ProjectItem
 {
     #region Lists
     [AllowNull]
-    public Project Project { get; set; }
+    public Project ProjectEntity { get; set; }
 
     #endregion
     protected override async Task OnInitializedAsync()
     {
-        if (Project is not null) return;
+        if (ProjectEntity is not null) return;
 
         await LoadProjectAsync();
     }
@@ -23,7 +23,7 @@ public partial class ProjectItem
     private async Task LoadProjectAsync(string? queryString = "")
     {
         //TODO : remove mock
-        Project = new Project { Id = 122, Name = "Project 1", Description = "Description 1" };
+        ProjectEntity = new Project { Id = 122, Name = "Project 1", Description = "Description 1" };
     }
 
     [Inject, AllowNull]

@@ -2,7 +2,7 @@
 
 [Route("[controller]")]
 [ApiController]
-[Authorize]
+//[Authorize]
 public class ProjectController : ControllerBase, IDisposable
 {
 
