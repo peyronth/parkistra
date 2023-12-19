@@ -23,8 +23,7 @@ public partial class ProjectsSlider
     private async Task LoadProjectsAsync(string? queryString = "")
     {
         var ProjectsCall = await MainApiService.GetProjectsAsync();
-        Projects = ProjectsCall.Many;
-        Console.WriteLine($"Projects: {Projects}");
+        Projects = ProjectsCall.Many?.Where(p => p.Drafted).ToList();
         activeSlideIndex = Projects.FirstOrDefault()?.Id ?? 0;
     }
 
