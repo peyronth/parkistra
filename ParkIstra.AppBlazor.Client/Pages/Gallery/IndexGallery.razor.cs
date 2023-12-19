@@ -9,25 +9,23 @@ public partial class IndexGallery
 {
     #region Lists
     [AllowNull]
-    public List<Project> Projects { get; set; }
+    public List<Image> Images { get; set; }
 
     #endregion
     protected override async Task OnInitializedAsync()
     {
-        if (Projects is not null) return;
+        if (Images is not null) return;
 
-        await LoadProjectsAsync();
+        await LoadImagesAsync();
     }
 
-    private async Task LoadProjectsAsync()
+    private async Task LoadImagesAsync()
     {
-        
-        //TODO : remove mock
-        Projects = new List<Project>
+        var ImagesResponse = await MainApiService.GetImagesAsync();
+        if(ImagesResponse.IsSuccess)
         {
-            new Project { Id = 122, Name = "Project 1", Description = "Description 1"}
-        };
-
+            Images = ImagesResponse.Many;
+        }
     }
 
     [Inject, AllowNull]

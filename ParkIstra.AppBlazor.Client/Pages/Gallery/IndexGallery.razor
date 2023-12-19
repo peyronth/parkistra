@@ -3,12 +3,11 @@
 
 <h1>Gallery</h1>
 
-@foreach (var project in Projects) {
-    @foreach (var image in project.Images) {
+@if(Images!=null) {
+    @foreach (var image in Images) {
         <div class="gallery-image">
-            <img src="@image" alt="Image @project.Name"/>
-            <h3>@project.Name</h3>
-            <a href="/projects/project?id=@project.Id">See More</a>
+            <img src="@image.Url" alt="Image"/>
+            <a href="/projects/project?id=@image.ProjectId">See More</a>
         </div>
     }
 }
