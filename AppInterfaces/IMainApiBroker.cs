@@ -30,8 +30,8 @@ public interface IMainApiBroker
     #endregion
 
     #region Authentiacion
-    Task<Response<Response>> RegisterAsync(string uri, ParkIstra.Models.Main.Register user);
-    Task<Response<Response>> LoginAsync(string uri, ParkIstra.Models.Main.Login model);
+    Task<Response<Response>> RegisterAsync(string uri, bool isSingle = true);
+    Task<Response<Response>> LoginAsync(string uri, bool isSingle = true);
     Task<Response<Response>> SendResetPwdLink(string uri, bool isSingle = true);
     Task<Response<Response>> ConfirmPwdLink(string uri, bool isSingle = true);
     Task<Response<Response>> ConfirmEmail(string uri, bool isSingle = true);

@@ -22,7 +22,7 @@ public partial class LoginPage
 
     private async Task Submit()
     {
-        var response = await MainApiService.LoginAsync(LoginModel);
+        var response = await MainApiService.LoginAsync(LoginModel.Email, LoginModel.Password);
         BlazorProblemDetails = response.BlazorProblemDetails;
         if (BlazorProblemDetails != null || response.Single.Status == false)
         {

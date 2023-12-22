@@ -49,6 +49,7 @@ public class CustomBroker<TResponse, T> where T : class where TResponse : class
         try
         {
             var payload = await HttpClient.PostAsJsonAsync(uri, entity);
+            var a = entity;
             response.IsSuccess = payload.IsSuccessStatusCode;
 
             if (response.IsSuccess)

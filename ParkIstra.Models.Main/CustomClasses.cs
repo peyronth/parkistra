@@ -7,10 +7,11 @@ namespace ParkIstra.Models.Main;
 public class Register
 {
     [Required]
-    [EmailAddress]
+    //[EmailAddress]
     public string? Email { get; set; }
     [Required]
-    public string? password { get; set; }
+    //[DataType(DataType.Password)]
+    public string Password { get; set; }
     [Required]
     public int? UserType { get; set; }
 
@@ -23,7 +24,8 @@ public class Login
     [EmailAddress]
     public string? Email { get; set; }
     [Required]
-    public string? password { get; set; }
+    [DataType(DataType.Password)]
+    public string Password { get; set; }
 }
 
 [NotMapped]

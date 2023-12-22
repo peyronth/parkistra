@@ -1,16 +1,23 @@
 @page "/projects/project"
 @layout MainLayoutNav
 
-<div class="container">
-    <h1>@ProjectEntity.Name</h1>
-    <p>@ProjectEntity.Description</p>
 
-    <div class="row">
-        @foreach (var image in ProjectEntity.Images)
+<div class="container">
+    @if (ProjectEntity != null)
+    {
+        @foreach (var item in ProjectEntity)
         {
-            <div class="col-md-4">
-                <img src="@image.Url" class="img-fluid" alt="Project Image">
+            <h1>@item.Name</h1>
+            <p>@item.Description</p>
+            <div class="row">
+                @foreach (var image in item.Images)
+                {
+                    <div class="col-md-4">
+                        <img src="@image.Url" class="img-fluid" alt="Project Image">
+                    </div>
+                }
             </div>
         }
-    </div>
+
+    }
 </div>

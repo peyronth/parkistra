@@ -8,25 +8,29 @@
     <div class="card-body p-md-5">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                <EditForm Model="@RegisterModel" OnValidSubmit="HandleValidSubmit">
+                    <DataAnnotationsValidator />
 
-                <form action="https://localhost:7174/Authentication/register" method="post">
-                    <div class="mb-1">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" value="@RegisterModel.Email" required/>
+                    <div>
+                        <label for="email">Email:</label>
+                        <InputText id="email" @bind-Value="@RegisterModel.Email" />
+                        <ValidationMessage For="@(() => RegisterModel.Email)"></ValidationMessage>
                     </div>
-                    <div class="mb-4">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" value="@RegisterModel.password" required/>
-                    </div>
-                    <input type="hidden" name="UserType" value="1" /> 
 
-                    <div class="d-flex flex-row justify-content-start mt-4">
-                        <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                            <button type="submit" class="btn btn-primary btn-md">Register</button>
-                        </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <InputText id="password" @bind-Value="@RegisterModel.Password" type="password" />
+                        <ValidationMessage For="@(() => RegisterModel.Password)"></ValidationMessage>
                     </div>
-                </form>
 
+                    <div>
+                        <label for="usertype">User Type (Number):</label>
+                        <InputNumber id="usertype" @bind-Value="@RegisterModel.UserType" />
+                        <ValidationMessage For="@(() => RegisterModel.UserType)"></ValidationMessage>
+                    </div>
+
+                    <button type="submit">Register</button>
+                </EditForm>
             </div>
         </div>
     </div>

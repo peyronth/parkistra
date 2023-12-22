@@ -17,6 +17,7 @@ public class CustomHttpMessageHandler : DelegatingHandler
         //var afrt = await _js.InvokeAsync<string>("getCookie", ".AFRT");
         string val = await _js.InvokeAsync<string>("localStorage.getItem", "jwt");
         request.Headers.Add("Authorization", "Bearer " + val);
+        //request.Headers.Add("Authorization", "Bearer " + val);
 
         return await base.SendAsync(request, cancellationToken);
     }

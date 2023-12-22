@@ -10,7 +10,8 @@ public partial class ProjectItem
 {
     #region Lists
     [AllowNull]
-    public Project ProjectEntity { get; set; }
+    public List<Project> ProjectEntity { get; set; }
+    private BlazorProblemDetails? BlazorProblemDetails { get; set; }
 
     #endregion
     protected override async Task OnInitializedAsync()
@@ -22,8 +23,17 @@ public partial class ProjectItem
 
     private async Task LoadProjectAsync(string? queryString = "")
     {
-        //TODO : remove mock
-        ProjectEntity = new Project { Id = 122, Name = "Project 1", Description = "Description 1" };
+        ODataQuery query = new()
+        {
+            ExpandList = new() { "ApplicationUser", "Images" }
+        };
+
+        var response = await MainApiService.GetProjectsAsync(query);
+        BlazorProblemDetails = response.BlazorProblemDetails;
+        if (response.IsSuccess)
+        {
+            ProjectEntity = response.Many ?? new();
+        }
     }
 
     [Inject, AllowNull]
