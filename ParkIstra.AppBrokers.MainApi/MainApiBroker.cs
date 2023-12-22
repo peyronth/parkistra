@@ -11,8 +11,10 @@ public partial class MainApiBroker : IMainApiBroker
         ImagesBroker = brokerFactory.Create<Image>(httpClient, blazorProblemFactory);
         ApplicationUsersBroker = brokerFactory.Create<ApplicationUser>(httpClient, blazorProblemFactory);
         AuthenticationsBroker = brokerFactory.Create<Response>(httpClient, blazorProblemFactory);
-        RegistersBroker = brokerFactory.Create<Response, ParkIstra.Models.Main.Register>(httpClient, blazorProblemFactory);
-        LoginBroker = brokerFactory.Create<Response, ParkIstra.Models.Main.Login>(httpClient, blazorProblemFactory);
+        RegistersBroker = brokerFactory.Create<Response, Register>(httpClient, blazorProblemFactory);
+        RegistersBBroker = brokerFactory.Create<Response>(httpClient, blazorProblemFactory);
+        LoginBroker = brokerFactory.Create<Response, Login>(httpClient, blazorProblemFactory);
+        LoginBBroker = brokerFactory.Create<Response>(httpClient, blazorProblemFactory);
     }
 
     #region Project
@@ -58,10 +60,10 @@ public partial class MainApiBroker : IMainApiBroker
     #endregion
 
     #region Authentication
-    public async Task<Response<Response>> RegisterAsync(string uri, ParkIstra.Models.Main.Register user) =>
-        await RegistersBroker.PostAsync(uri, user, false);
-    public async Task<Response<Response>> LoginAsync(string uri, ParkIstra.Models.Main.Login model) =>
-       await LoginBroker.PostAsync(uri, model, false);
+    public async Task<Response<Response>> RegisterAsync(string uri, bool isSingle = true) =>
+        await RegistersBBroker.GetAsync(uri, isSingle);
+    public async Task<Response<Response>> LoginAsync(string uri, bool isSingle = true) =>
+       await LoginBBroker.GetAsync(uri, isSingle);
     public async Task<Response<Response>> SendResetPwdLink(string uri, bool isSingle = true) =>
         await AuthenticationsBroker.GetAsync(uri, isSingle);
     public async Task<Response<Response>> ConfirmPwdLink(string uri, bool isSingle = true) =>
@@ -77,8 +79,10 @@ public partial class MainApiBroker : IMainApiBroker
     private Broker<Testimonial> TestimonialsBroker { get; init; }
     private Broker<Image> ImagesBroker { get; init; }
     private Broker<Response> AuthenticationsBroker { get; init; }
-    private CustomBroker<Response, ParkIstra.Models.Main.Register> RegistersBroker { get; init; }
-    private CustomBroker<Response, ParkIstra.Models.Main.Login> LoginBroker { get; init; }
+    private CustomBroker<Response, Register> RegistersBroker { get; init; }
+    private Broker<Response> RegistersBBroker { get; init; }
+    private CustomBroker<Response, Login> LoginBroker { get; init; }
+    private Broker<Response> LoginBBroker { get; init; }
     private Broker<ApplicationUser> ApplicationUsersBroker { get; init; }
 
 }

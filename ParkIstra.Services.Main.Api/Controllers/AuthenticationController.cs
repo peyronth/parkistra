@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.Security.Policy;
 
 namespace ParkIstra.Services.MainApi.Controllers;
@@ -25,24 +26,25 @@ public class AuthenticationController : ControllerBase, IDisposable
         _emailSender = emailSender;
     }
 
-    [HttpPost]
+    [HttpGet]
     [Route("register")]
-    public async Task<IActionResult> Register(Register user)
+    public async Task<IActionResult> Register(string Email, string Password, int UserType)
     {
         if (ModelState.IsValid)
         {
             ApplicationUser appUser = new ApplicationUser
             {
-                UserName = user.Email,
-                Email = user.Email
+                UserName = Email,
+                Email = Email,
+                UserType = UserType
             };
 
-            IdentityResult result = await userManager.CreateAsync(appUser, user.password);
+            IdentityResult result = await userManager.CreateAsync(appUser, Password);
 
             if (result.Succeeded)
             {
                 var token = HttpUtility.UrlEncode(await userManager.GenerateEmailConfirmationTokenAsync(appUser));
-                var confirmationlink = "https://localhost:7158/Authentication/ConfirmEmailLink?token=" + token + "&email=" + user.Email;
+                var confirmationlink = "https://localhost:7158/Authentication/ConfirmEmailLink?token=" + token + "&email=" + Email;
 
                 var message = new Messages(new string[] { appUser.Email },
                     "Potvrda email adrese",
@@ -84,11 +86,11 @@ public class AuthenticationController : ControllerBase, IDisposable
         });
     }
 
-    [HttpPost]
+    [HttpGet]
     [Route("login")]
-    public async Task<IActionResult> Login(Login model)
+    public async Task<IActionResult> Login(string Email, string Password)
     {
-        var user = userManager.Users.Include(x => x.UserInfo).Where(x => x.Email == model.Email).FirstOrDefault();
+        var user = userManager.Users.Include(x => x.UserInfo).Where(x => x.Email == Email).FirstOrDefault();
         var canSignIn = await signInManager.CanSignInAsync(user);
         if (!canSignIn)
         {
@@ -100,7 +102,7 @@ public class AuthenticationController : ControllerBase, IDisposable
                 Data = ""
             });
         }
-        if (user != null && await userManager.CheckPasswordAsync(user, model.password))
+        if (user != null && await userManager.CheckPasswordAsync(user, Password))
         {
             var authClaims = new List<Claim>
                 {
@@ -235,7 +237,52 @@ public class AuthenticationController : ControllerBase, IDisposable
         return user;
     }
 
+    [HttpGet] // Getting all user emails
+    public async Task<ActionResult<IQueryable<ApplicationUser>>> GetAllUsers()
+    {
+        var user = MainDbContext.Users.Select(x => x.Email);
 
+        return Ok(user);
+    }
+
+    [HttpDelete]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [Authorize]
+    public async Task<Response> DeleteUser(string Email)
+    {
+        var user = await userManager.FindByEmailAsync(Email);
+        if (user == null)
+        {
+            return new Response
+            {
+                Status = false,
+                Message = "User not found",
+                StatusCode = System.Net.HttpStatusCode.OK.ToString(),
+            };
+        }
+
+        var result = await userManager.DeleteAsync(user);
+        if (result.Succeeded)
+        {
+            return new Response
+            {
+                Status = true,
+                Message = "User deleted successfully",
+                StatusCode = System.Net.HttpStatusCode.OK.ToString(),
+            };
+        }
+        else
+        {
+            return new Response
+            {
+                Status = false,
+                Message = "Bad request",
+                StatusCode = System.Net.HttpStatusCode.OK.ToString(),
+            };
+        }
+    }
 
     public void Dispose()
     {

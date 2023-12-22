@@ -31,8 +31,8 @@ public interface IMainApiService
     #endregion
 
     #region Authentiacion
-    Task<Response<Response>> RegisterAsync(ParkIstra.Models.Main.Register user);
-    Task<Response<Response>> LoginAsync(ParkIstra.Models.Main.Login model);
+    Task<Response<Response>> RegisterAsync(string Email, string Password, int UserType);
+    Task<Response<Response>> LoginAsync(string Email, string Password);
     Task<Response<Response>> SendResetPwdLink(string email);
     Task<Response<Response>> ConfirmPwdLink(string email, string token, string newPassword);
     Task<Response<Response>> ConfirmEmail(string token, string email);

@@ -3,10 +3,10 @@
 public partial class MainApiService
 {
 
-    public async Task<Response<Response>> RegisterAsync(ParkIstra.Models.Main.Register user) =>
-        await MainApiBroker.RegisterAsync($"Authentication/register", GetPreparedRegsiter(user));
-    public async Task<Response<Response>> LoginAsync(ParkIstra.Models.Main.Login model) =>
-        await MainApiBroker.LoginAsync($"Authentication/login", GetPreparedLogin(model));
+    public async Task<Response<Response>> RegisterAsync(string Email, string Password, int UserType) =>
+        await MainApiBroker.RegisterAsync($"Authentication/register?email={Email}&Password={Password}&UserType={UserType}");
+    public async Task<Response<Response>> LoginAsync(string Email, string Password) =>
+        await MainApiBroker.LoginAsync($"Authentication/login?Email={Email}&Password={Password}");
     public async Task<Response<Response>> SendResetPwdLink(string email) =>
         await MainApiBroker.SendResetPwdLink($"Authentication/resetPassword?email={email}");
     public async Task<Response<Response>> ConfirmPwdLink(string email, string token, string newPassword) =>
@@ -17,16 +17,16 @@ public partial class MainApiService
         await MainApiBroker.GetUserByEmail($"Authentication/getuser?email={email}");
 
 
-    private static ParkIstra.Models.Main.Register GetPreparedRegsiter(ParkIstra.Models.Main.Register user)
+    private static Register GetPreparedRegsiter(Register user)
     {
-        var preparedRegister = JsonSerializer.Deserialize<ParkIstra.Models.Main.Register>(
+        var preparedRegister = JsonSerializer.Deserialize<Register>(
             JsonSerializer.Serialize(user))!;
 
         return preparedRegister;
     }
-    private static ParkIstra.Models.Main.Login GetPreparedLogin(ParkIstra.Models.Main.Login model)
+    private static Login GetPreparedLogin(Login model)
     {
-        var preparedLogin = JsonSerializer.Deserialize<ParkIstra.Models.Main.Login>(
+        var preparedLogin = JsonSerializer.Deserialize<Login>(
             JsonSerializer.Serialize(model))!;
 
         return preparedLogin;
