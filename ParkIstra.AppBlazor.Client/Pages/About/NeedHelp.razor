@@ -1,9 +1,14 @@
 @page "/about/needHelp/"
 @layout MainLayoutNav
 
-<h3>Need Help</h3>
+<br /><br />
 
-<form>
+<header>
+    <h3> I NEED HELP </h3>
+</header>
+
+<!--
+<form id="form" class="topBefore">
     <div class="form-group">
         <label for="name">Name</label>
         <input type="text" class="form-control" id="name" placeholder="Enter your name">
@@ -25,6 +30,17 @@
         <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
+</form> -->
+
+<form id="form" class="topBefore">
+
+    <input id="name" type="text" placeholder="NAME">
+    <input id="email" type="email" placeholder="E-MAIL">
+    <input id="location" type="text" placeholder="LOCATION">
+    <input id="birth" type="date" placeholder="BIRTH">
+    <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+    <input id="submit" type="submit" value="SEND">
+
 </form>
 
 @code {

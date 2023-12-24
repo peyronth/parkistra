@@ -1,8 +1,14 @@
+
 @page "/contact/"
 @layout MainLayoutNav
 
-<h3>Contact Us</h3>
+<br /> <br />
 
+<header>
+    <h3> CONTACT US </h3>
+</header>
+
+<!--
 <form>
     <div class="form-group">
         <label for="name">Name</label>
@@ -17,6 +23,15 @@
         <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
+</form> -->
+
+<form id="form" class="topBefore">
+
+    <input id="name" type="text" placeholder="NAME">
+    <input id="email" type="text" placeholder="E-MAIL">
+    <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+    <input id="submit" type="submit" value="SEND">
+
 </form>
 
 @code {
