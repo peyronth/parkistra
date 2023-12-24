@@ -36,7 +36,7 @@ public class AuthenticationController : ControllerBase, IDisposable
             {
                 UserName = Email,
                 Email = Email,
-                UserType = UserType
+                UserType = 1
             };
 
             IdentityResult result = await userManager.CreateAsync(appUser, Password);
