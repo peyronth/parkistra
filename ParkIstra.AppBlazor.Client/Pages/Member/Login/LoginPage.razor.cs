@@ -39,7 +39,12 @@ public partial class LoginPage
         }
         if (response.IsSuccess) { 
             await jsr.InvokeVoidAsync("localStorage.setItem", "jwt", $"{response.Single.token}").ConfigureAwait(false);
+            // Also write user informations to local storage
+            var userInformations = await MainApiService.GetUserByEmail(LoginModel.Email);
+            await jsr.InvokeVoidAsync("localStorage.setItem", "user_email", $"{userInformations.Single?.Email}").ConfigureAwait(false);
+            await jsr.InvokeVoidAsync("localStorage.setItem", "user_isonlymember", $"{userInformations.Single?.UserType}").ConfigureAwait(false);
             NavigationManager.NavigateTo("/member/");
+            
         }
     }
     private async void ForgotPassword()
