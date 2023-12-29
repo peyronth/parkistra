@@ -8,6 +8,11 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 namespace ParkIstra.AppBlazor.Client.Pages.Projects;
 public partial class ProjectItem
 {
+    #region Parameters
+    [Parameter]
+    public string? Id { get; set; }
+    #endregion
+
     #region Lists
     [AllowNull]
     public List<Project> ProjectEntity { get; set; }
@@ -27,12 +32,11 @@ public partial class ProjectItem
         {
             ExpandList = new() { "ApplicationUser", "Images" }
         };
-
         var response = await MainApiService.GetProjectsAsync(query);
         BlazorProblemDetails = response.BlazorProblemDetails;
         if (response.IsSuccess)
         {
-            ProjectEntity = response.Many ?? new();
+            ProjectEntity = response.Many?.FindAll(x => x.Id.ToString() == Id);
         }
     }
 
