@@ -29,7 +29,7 @@ public interface IMainApiBroker
 
     #endregion
 
-    #region Authentiacion
+    #region Authentication
     Task<Response<Response>> RegisterAsync(string uri, bool isSingle = true);
     Task<Response<Response>> LoginAsync(string uri, bool isSingle = true);
     Task<Response<Response>> SendResetPwdLink(string uri, bool isSingle = true);
