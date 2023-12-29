@@ -12,11 +12,30 @@ public interface IMainApiBroker
     #endregion
 
     #region Testimonials
-    Task<Response<Testimonials>> GetTestimonialsAsync(string uri, bool isSingle = false);
-    Task<Response<Testimonials>> GetTestimonialByIDAsync(string uri, bool isSingle = true);
-    Task<Response<Testimonials>> PostTestimonialAsync(string uri, Testimonials testimonial);
-    Task<Response<Testimonials>> PutTestimonialAsync(string uri, Testimonials testimonial);
-    Task<Response<Testimonials>> DeleteTestimonialAsync(string uri);
+    Task<Response<Testimonial>> GetTestimonialsAsync(string uri, bool isSingle = false);
+    Task<Response<Testimonial>> GetTestimonialByIDAsync(string uri, bool isSingle = true);
+    Task<Response<Testimonial>> PostTestimonialAsync(string uri, Testimonial testimonial);
+    Task<Response<Testimonial>> PutTestimonialAsync(string uri, Testimonial testimonial);
+    Task<Response<Testimonial>> DeleteTestimonialAsync(string uri);
+
+    #endregion
+
+    #region Image
+    Task<Response<Image>> GetImagesAsync(string uri, bool isSingle = false);
+    Task<Response<Image>> GetImageByIDAsync(string uri, bool isSingle = true);
+    Task<Response<Image>> PostImageAsync(string uri, Image image);
+    Task<Response<Image>> PutImageAsync(string uri, Image image);
+    Task<Response<Image>> DeleteImageAsync(string uri);
+
+    #endregion
+
+    #region Authentication
+    Task<Response<Response>> RegisterAsync(string uri, bool isSingle = true);
+    Task<Response<Response>> LoginAsync(string uri, bool isSingle = true);
+    Task<Response<Response>> SendResetPwdLink(string uri, bool isSingle = true);
+    Task<Response<Response>> ConfirmPwdLink(string uri, bool isSingle = true);
+    Task<Response<Response>> ConfirmEmail(string uri, bool isSingle = true);
+    Task<Response<ApplicationUser>> GetUserByEmail(string uri, bool isSingle = true);
 
     #endregion
 }

@@ -1,0 +1,41 @@
+@page "/member/admin/writeTestimonial/"
+@layout MainLayoutNav
+
+@using ParkIstra.Models.Main; 
+@using ParkIstra.AppInterfaces;
+@inject IMainApiService MainApiService;
+@inject NavigationManager NavigationManager;
+
+
+<h3>Create New Testimonial</h3>
+
+<EditForm Model="@testimonial" OnValidSubmit="CreateTestimonial">
+    <div class="form-group">
+        <label for="content">Content:</label>
+        <InputTextArea class="form-control" id="content" rows="3" @bind-Value="@testimonial.Content"></InputTextArea>
+    </div>
+    <div class="form-group">
+        <label for="author">Author:</label>
+        <InputText class="form-control" id="author" @bind-Value="@testimonial.Author"></InputText>
+    </div>
+    <div class="form-group">
+        <label for="country">Country:</label>
+        <InputText class="form-control" id="country" @bind-Value="@testimonial.Country"></InputText>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</EditForm>
+
+
+
+@code {
+    private Testimonial testimonial = new Testimonial();
+
+    private async void CreateTestimonial()
+    {
+        var response = await MainApiService.AddTestimonialAsync(testimonial);
+        if (response.IsSuccess)
+        {
+            NavigationManager.NavigateTo("/member/admin/manageTestimonials", true);
+        }
+    }
+}

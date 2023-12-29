@@ -24,9 +24,9 @@ _ = builder.Services.AddSwaggerGen();
 _ = builder.Services.AddControllers().AddODataService();
 _ = builder.Services.AddRazorPages();
 
-//_ = builder.Services.AddEndpointsApiExplorer();
-//_ = builder.Services.AddSwaggerGen();
-//_ = builder.Services.AddASPProblemDetailsFactory(isDevelopment);
+_ = builder.Services.AddEndpointsApiExplorer();
+_ = builder.Services.AddSwaggerGen();
+_ = builder.Services.AddASPProblemDetailsFactory(isDevelopment);
 
 #region DbContexts
 
@@ -37,11 +37,11 @@ _ = builder.Services.AddControllers().AddODataService();
 _ = builder.Services.AddMainDbContext(isDevelopment, configuration);
 
 
-//var utilApiCorsPolicy = "utilApiCorsPolicy";
-//_ = builder.Services.AddCorsService(utilApiCorsPolicy);
-//_ = builder.Services.AddControllers().AddODataService();
+var utilApiCorsPolicy = "utilApiCorsPolicy";
+_ = builder.Services.AddCorsService(utilApiCorsPolicy);
+_ = builder.Services.AddControllers().AddODataService();
 
-//_ = builder.Services.AddUtilDbContext(isDevelopment, configuration);
+_ = builder.Services.AddUtilDbContext(isDevelopment, configuration);
 
 #endregion
 

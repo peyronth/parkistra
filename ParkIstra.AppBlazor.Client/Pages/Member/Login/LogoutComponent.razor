@@ -1,0 +1,14 @@
+﻿@inject NavigationManager NavigationManager
+@inject IJSRuntime jsr
+
+<div class="d-flex flex-row justify-content-start mt-1 mb-1">
+    <button type="submit" class="btn btn-sm btn-cus-logout" onclick="@Logout"><span class="logout-txt">Log out</span></button>
+</div>
+
+@code {
+    private async void Logout()
+    {
+        await jsr.InvokeVoidAsync("localStorage.removeItem", "jwt").ConfigureAwait(false);
+        NavigationManager.NavigateTo("/");
+    }
+}

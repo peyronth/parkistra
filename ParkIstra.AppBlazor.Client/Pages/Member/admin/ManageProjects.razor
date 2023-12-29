@@ -1,0 +1,86 @@
+@page "/member/admin/manageProjects/"
+@layout MainLayoutNav
+
+@using ParkIstra.Models.Main; 
+@using ParkIstra.AppInterfaces;
+@inject IMainApiService MainApiService;
+
+<h1>Manage Projects</h1>
+
+@if (Projects != null){
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Drafted</th>
+                <th>Images</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var project in Projects)
+            {
+                <tr>
+                    <td>@project.Name</td>
+                    <td>
+                        <div style="max-height: 200px; overflow-y: auto;">
+                            @project.Description
+                        </div>
+                    </td>
+                    <td>@project.Drafted</td>
+                    <td>
+                        @foreach (var image in project.Images)
+                        {
+                            <img src="@image.Url" alt="Project Image" style="max-width: 100px; max-height: 100px;" />
+                        }
+                    </td>
+                    <td>
+                        <button class="btn btn-danger" @onclick="() => removeProject(project.Id)">Remove</button>
+                        @if (!project.Drafted)
+                        {
+                            <button class="btn btn-success" @onclick="() => draftProject(project)" >Draft</button>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    public List<Project> Projects;
+
+    private async Task GetProjects()
+    {
+        var response = await MainApiService.GetProjectsAsync();
+        if (response.IsSuccess)
+        {
+            Projects = response.Many;
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetProjects();
+    }
+
+    protected async Task removeProject(int id)
+    {
+        var response = await MainApiService.DeleteProjectAsync(id);
+        if (response.IsSuccess)
+        {
+            await GetProjects();
+        }
+    }
+
+    protected async Task draftProject(Project project)
+    {
+        project.Drafted = true;
+        var response = await MainApiService.UpdateProjectAsync(project.Id, project);
+        if (response.IsSuccess)
+        {
+            await GetProjects();
+        }
+    }
+}

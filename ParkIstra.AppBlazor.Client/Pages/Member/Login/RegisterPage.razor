@@ -1,0 +1,37 @@
+﻿@page "/register"
+@using ParkIstra.AppBlazor.Client
+@using ParkIstra.Models.Main
+@using System.ComponentModel.DataAnnotations
+@inject NavigationManager NavigationManager
+
+<div class="card text-black" style="border-radius: 25px;">
+    <div class="card-body p-md-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                <EditForm Model="@RegisterModel" OnValidSubmit="HandleValidSubmit">
+                    <DataAnnotationsValidator />
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <InputText id="email" @bind-Value="@RegisterModel.Email" />
+                        <ValidationMessage For="@(() => RegisterModel.Email)"></ValidationMessage>
+                    </div>
+
+                    <div>
+                        <label for="password">Password:</label>
+                        <InputText id="password" @bind-Value="@RegisterModel.Password" type="password" />
+                        <ValidationMessage For="@(() => RegisterModel.Password)"></ValidationMessage>
+                    </div>
+
+                    <div>
+                        <label for="usertype">User Type (Number):</label>
+                        <InputNumber id="usertype" @bind-Value="@RegisterModel.UserType" />
+                        <ValidationMessage For="@(() => RegisterModel.UserType)"></ValidationMessage>
+                    </div>
+
+                    <button type="submit">Register</button>
+                </EditForm>
+            </div>
+        </div>
+    </div>
+</div>

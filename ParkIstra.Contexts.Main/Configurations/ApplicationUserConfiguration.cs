@@ -8,7 +8,12 @@ public class ApplicationUserConfiguration : IEntityTypeConfiguration<Application
     public void Configure(EntityTypeBuilder<ApplicationUser> entity)
     {
         _ = entity.ToTable("AspNetUsers"/*, t => t.IsTemporal()*/);
-                
+
+        _ = entity.Property(e => e.UserType)
+            .HasColumnName("UserType")
+            .HasDefaultValue(0)
+            .IsRequired();
+
         _ = entity.HasMany(e => e.Claims)
             .WithOne(e => e.User)
             .HasForeignKey(uc => uc.UserId)
