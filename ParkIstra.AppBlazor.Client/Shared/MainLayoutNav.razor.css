@@ -1,7 +1,15 @@
-main{
+main {
     margin-left: 60px;
     text-align: center;
+    flex: 1;
+    min-height: 100vh;
 }
 footer{
     margin-left: 60px;
 }
+
+
+/* DONE:
+    1. Fixed so footer doesn't stick to the content if page empty
+    or not tall enough
+ */

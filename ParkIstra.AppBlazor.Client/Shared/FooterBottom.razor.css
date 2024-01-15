@@ -1,3 +1,47 @@
 footer {
     background-color: var(--parkistra-colorSecondary-green);
+    /*position: sticky;*/
+    bottom: 0;
+    padding-left: 4em;
+    justify-content: space-between;
 }
+
+.footer-left{
+    text-align: center;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background-color: rgba(167, 174, 156, 0.5);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+    .back-to-top a {
+        color: #43493A;
+        text-decoration: none;
+        font-size: larger;
+    }
+
+    .back-to-top a:hover{
+        color:white;
+    }
+
+.footer-logo {
+    max-width: 100px; 
+}
+
+    .footer-logo img {
+        width: 100%; 
+    }
+
+/* Done:
+    1. Added logo that leads to homepage
+    2. Copyright line
+    3. Floating button pointing to the top of the page
+    
+    TODO:
+    1. Make the button disapear if page not scrolled
+    2. Facebook icon with link to group
+*/
