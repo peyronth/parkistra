@@ -2,21 +2,36 @@
 @layout MainLayoutNav
 
 @inject NavigationManager NavigationManager
+@inject IJSRuntime jsr
 
 <h1>Actions</h1>
 
-<!-- TODO: if user connected -->
-@if (true)
+@if (userConnected)
 {
-    <!-- TODO: if user is admin -->
-    if (true) {
+    if (adminConnected) {
         <button class="btn btn-primary" @onclick='() => NavigationManager.NavigateTo("/member/admin/manageProjects/")' >Manage Project</button>
         <button class="btn btn-primary" @onclick='() => NavigationManager.NavigateTo("/member/admin/manageMembers/")' >Manage Users</button>
         <button class="btn btn-primary" @onclick='() => NavigationManager.NavigateTo("/member/admin/writeTestimonial/")' >Write Testimonial</button>       
     }
     <button class="btn btn-primary" @onclick='() => NavigationManager.NavigateTo("/member/writeProject/")' >Write Project</button>
 }
-else
-{
-    NavigationManager.NavigateTo("member/login/");
+
+@code {
+    bool userConnected = false;
+    bool adminConnected = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await getUserStatus();
+    }
+
+    protected async Task getUserStatus()
+    {
+        userConnected = await jsr.InvokeAsync<string>("localStorage.getItem", "user_email") != null;
+        adminConnected = !(await jsr.InvokeAsync<string>("localStorage.getItem", "user_isonlymember") == "admin");
+        if(!userConnected)
+        {
+            NavigationManager.NavigateTo("/login/");
+        }
+    }
 }

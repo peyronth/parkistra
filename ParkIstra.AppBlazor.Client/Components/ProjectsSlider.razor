@@ -7,7 +7,7 @@
                 <h3>@project.Name</h3>
                 <div class="project-details">
                     <p>@(project.Description?.Length > 130 ? project.Description?.Substring(0, 127) + "..." : project.Description)</p>
-                    <a title="Read More" class="project-link" href="/projects/project/?id=@project.Id">Read More ></a>
+                    <a title="Read More" class="project-link" href="/projects/project/@project.Id">Read More ></a>
                 </div>
             </div>
         }

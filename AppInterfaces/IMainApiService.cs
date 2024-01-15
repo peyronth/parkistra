@@ -30,7 +30,7 @@ public interface IMainApiService
 
     #endregion
 
-    #region Authentiacion
+    #region Authentication
     Task<Response<Response>> RegisterAsync(string Email, string Password, int UserType);
     Task<Response<Response>> LoginAsync(string Email, string Password);
     Task<Response<Response>> SendResetPwdLink(string email);
